@@ -2464,35 +2464,68 @@
     "output": 8.572
   },
   {
+    "model": "gemini-2.5-pro-preview-06-05",
+    "type": "tokens",
+    "channel_type": 0.625,
+    "input": 0.00125,
+    "output": 0.01000
+  },
+  {
+    "model": "gemini-2.5-pro-preview-06-05-thinking",
+    "type": "tokens",
+    "channel_type": 0.625,
+    "input": 0.00125,
+    "output": 0.01000
+  },
+  {
+    "model": "gemini-2.5-flash-preview-05-20-thinking",
+    "type": "tokens",
+    "channel_type": 0.075,
+    "input": 0.00015,
+    "output": 0.00350
+  },
+  {
+    "model": "grok-3-search",
+    "type": "tokens",
+    "channel_type": 0.800,
+    "input": 0.00160,
+    "output": 0.00640
+  },
+  {
     "model": "ERNIE-Bot-turbo",
     "type": "tokens",
     "channel_type": 15,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "ERNIE-Speed",
     "type": "tokens",
     "channel_type": 15,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "ERNIE-Speed-128K",
     "type": "tokens",
     "channel_type": 15,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "ERNIE-Lite-8K",
     "type": "tokens",
     "channel_type": 15,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "ERNIE-Tiny-8K",
     "type": "tokens",
     "channel_type": 15,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "ERNIE-Functions-8K",
     "type": "tokens",
@@ -2582,7 +2615,8 @@
     "type": "tokens",
     "channel_type": 16,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "glm-4-alltools",
     "type": "tokens",
@@ -2651,7 +2685,8 @@
     "type": "tokens",
     "channel_type": 18,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "SparkDesk-v3.1",
     "type": "tokens",
@@ -3056,31 +3091,36 @@
     "type": "times",
     "channel_type": 31,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "llama2-70b-4096",
     "type": "times",
     "channel_type": 31,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "mixtral-8x7b-32768",
     "type": "times",
     "channel_type": 31,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "llama3-8b-8192",
     "type": "times",
     "channel_type": 31,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "llama3-70b-8192",
     "type": "times",
     "channel_type": 31,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "yi-34b-chat-0205",
     "type": "tokens",
@@ -3177,7 +3217,8 @@
     "type": "times",
     "channel_type": 34,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "mj_describe",
     "type": "times",
@@ -3204,7 +3245,8 @@
     "type": "times",
     "channel_type": 34,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "mj_low_variation",
     "type": "times",
@@ -3273,61 +3315,71 @@
     "type": "tokens",
     "channel_type": 35,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "@cf/lykon/dreamshaper-8-lcm",
     "type": "tokens",
     "channel_type": 35,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "@cf/openai/whisper",
     "type": "tokens",
     "channel_type": 35,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "@cf/qwen/qwen1.5-14b-chat-awq",
     "type": "tokens",
     "channel_type": 35,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "@cf/qwen/qwen1.5-7b-chat-awq",
     "type": "tokens",
     "channel_type": 35,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "@cf/stabilityai/stable-diffusion-xl-base-1.0",
     "type": "tokens",
     "channel_type": 35,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "@hf/google/gemma-7b-it",
     "type": "tokens",
     "channel_type": 35,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "@hf/thebloke/deepseek-coder-6.7b-base-awq",
     "type": "tokens",
     "channel_type": 35,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "@hf/thebloke/llama-2-13b-chat-awq",
     "type": "tokens",
     "channel_type": 35,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "@cf/meta/llama-3-8b-instruct",
     "type": "tokens",
     "channel_type": 35,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "command-r",
     "type": "tokens",
@@ -3368,7 +3420,8 @@
     "type": "tokens",
     "channel_type": 40,
     "input": 0.075,
-    "input": 0.3,  },
+    "output": 0.3
+  },
   {
     "model": "hunyuan-standard",
     "type": "tokens",
@@ -3395,5 +3448,6 @@
     "type": "times",
     "channel_type": 38,
     "input": 0.075,
-    "input": 0.3,  }
+    "output": 0.3
+  }
 ]
