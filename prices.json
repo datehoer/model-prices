@@ -1,5 +1,1720 @@
 [
   {
+    "model": "gpt-image-1",
+    "type": "tokens",
+    "channel_type": 2,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "Qwen/QwQ-32B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "DeepSeek-R1-Distill-Llama-70B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "black-forest-labs/FLUX.1-pro",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-tiny-2407",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.125,
+    "output": 0.125
+  },
+  {
+    "model": "grok-3-beta",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-3-deepersearch",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o1-pro-all",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o3-2025-04-16",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-moderation-2411",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gemini-2.5-flash-preview-05-20",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.175,
+    "output": 0.175
+  },
+  {
+    "model": "open-mistral-nemo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "black-forest-labs/FLUX.1-depth",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o3-mini-all",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Llama-Vision-Free",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "codestral-mamba-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "suno-v3",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "DeepSeek-R1-Distill-Qwen-32B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-image-1-vip",
+    "type": "tokens",
+    "channel_type": 2,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "kimi-latest",
+    "type": "tokens",
+    "channel_type": 2,
+    "input": 1.429,
+    "output": 1.429
+  },
+  {
+    "model": "open-mixtral-8x22b-2404",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1
+  },
+  {
+    "model": "Qwen3-235B-A22B-FP8",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "c4ai-aya-expanse-8b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "runway-video",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gemini-2.5-pro-preview-03-25",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/llama-guard-4-12b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "open-codestral-mamba",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "compound-beta-mini",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Llama-2-70b-hf",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.4,
+    "output": 0.4
+  },
+  {
+    "model": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "black-forest-labs/FLUX.1.1-pro",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "llama-4-scout",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-3-mini-fast-beta",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "togethercomputer/m2-bert-80M-2k-retrieval",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "glm-z1-flash",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4-gizmo-*",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 5,
+    "output": 15
+  },
+  {
+    "model": "qwen3-235b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "deepseek-r1-distill-llama-70b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Llama-3.2-11B-Vision-Instruct-Turbo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "Salesforce/Llama-Rank-v1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "Qwen/Qwen2.5-72B-Instruct-Turbo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.14
+  },
+  {
+    "model": "grok-3-reasoning",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "llama-4-maverick",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "gpt-4.5-preview",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-small-2409",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.3,
+    "output": 0.3
+  },
+  {
+    "model": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.4,
+    "output": 0.4
+  },
+  {
+    "model": "gemini-2.0-flash-lite-preview-02-05",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-tiny",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.125,
+    "output": 0.125
+  },
+  {
+    "model": "grok-3-deepsearch",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-3-reasoner",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "ministral-3b-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.14
+  },
+  {
+    "model": "Qwen/Qwen2.5-VL-72B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-saba-24b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "flux",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o3-mini",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.125,
+    "output": 0.375
+  },
+  {
+    "model": "meta-llama/Llama-3.2-90B-Vision-Instruct-Turbo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mj-chat",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-R1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.14
+  },
+  {
+    "model": "grok-2-image-1212",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "togethercomputer/m2-bert-80M-8k-retrieval",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "llama-3.1-sonar-small-128k-online",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.15,
+    "output": 0.15
+  },
+  {
+    "model": "mj_uploads",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "deepseek-v3-0324",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o4-mini-high-all",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o4-mini-all",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-ocr-2503",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "GLM-4-Flash",
+    "type": "tokens",
+    "channel_type": 2,
+    "input": 0.071,
+    "output": 0.071
+  },
+  {
+    "model": "grok-3-mini",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-vision-beta",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "glm-4v-plus",
+    "type": "tokens",
+    "channel_type": 2,
+    "input": 0.714,
+    "output": 0.714
+  },
+  {
+    "model": "meta-llama/llama-prompt-guard-2-22m",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.05,
+    "output": 0.05
+  },
+  {
+    "model": "mistral-tiny-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.125,
+    "output": 0.125
+  },
+  {
+    "model": "cogvideox",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "llama-guard-3-8b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "claude-3-7-sonnet-thinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1.5,
+    "output": 7.5
+  },
+  {
+    "model": "command",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.25,
+    "output": 0.75
+  },
+  {
+    "model": "mistral-small",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.5,
+    "output": 0.5
+  },
+  {
+    "model": "grok-2-vision-1212",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4.5-preview-2025-02-27",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "DeepSeek-R1-0528",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.14
+  },
+  {
+    "model": "playai-tts-arabic",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "command-light",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.15,
+    "output": 0.15
+  },
+  {
+    "model": "gemini-2.5-pro-exp-03-25",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-V3",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "claude-opus-4-20250514-thinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gemini-2.5-flash-preview-04-17",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.175,
+    "output": 0.175
+  },
+  {
+    "model": "o3-mini-2025-01-31",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "black-forest-labs/FLUX.1-canny",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-3-image",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o1-all",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "luma-video",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "imagen-4.0-ultra-generate-exp-05-20",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gemini-2.0-flash-thinking-exp-01-21",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-3-fast",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219-thinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1.5,
+    "output": 7.5
+  },
+  {
+    "model": "o4-mini",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o3",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-3-fast-beta",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "google/gemma-2-9b-it",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "command-r-08-2024",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.25,
+    "output": 0.75
+  },
+  {
+    "model": "moonshot-v1-8k-vision-preview",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4.1-mini",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "codestral-2412",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-tiny-2312",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.21
+  },
+  {
+    "model": "o1-2024-12-17",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "command-nightly",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gemini-2.5-pro-preview-05-06",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1.75,
+    "output": 1.75
+  },
+  {
+    "model": "Meta-Llama-3-3-70B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "c4ai-aya-vision-8b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "suno-v3.5",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "midjourney",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "codestral-2501",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "DeepSeek-R1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.14
+  },
+  {
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o1-pro",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "deepseek-r1-0528",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.14
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "Qwen/Qwen2-VL-72B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "deepseek-v3-search",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "llama3.3:latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "pixtral-large-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-saba-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "qwen-qwq-32b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "deepseek-v3",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "text-moderation-007",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "deepseek-r1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.14
+  },
+  {
+    "model": "codestral-2411-rc5",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Meta-Llama-3-8B-Instruct-Lite",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.05,
+    "output": 0.05
+  },
+  {
+    "model": "Gryphe/MythoMax-L2-13b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "grok-2",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "llama-3-sonar-small-32k-online",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.15,
+    "output": 0.15
+  },
+  {
+    "model": "mistral-large-pixtral-2411",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "black-forest-labs/FLUX.1-redux",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "Spark4.0 Ultra",
+    "type": "tokens",
+    "channel_type": 2,
+    "input": 1.429,
+    "output": 1.429
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "playai-tts",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "whisper-large-v3-turbo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gemini-2.5-flash-preview-04-17-nothinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.175,
+    "output": 0.175
+  },
+  {
+    "model": "black-forest-labs/FLUX.1-schnell-Free",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "c4ai-aya-expanse-32b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.4,
+    "output": 0.4
+  },
+  {
+    "model": "meta-llama/Llama-3.2-3B-Instruct-Turbo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-moderation-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "glm-z1-32b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.395,
+    "output": 0.395
+  },
+  {
+    "model": "pixtral-12b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.2,
+    "output": 0.2
+  },
+  {
+    "model": "gemini-2.5-pro-exp-advanced",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "WhereIsAI/UAE-Large-V1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.05,
+    "output": 0.05
+  },
+  {
+    "model": "deepseek-r1-search",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.14
+  },
+  {
+    "model": "gpt-4.1-2025-04-14",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4-all",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-3",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "togethercomputer/m2-bert-80M-32k-retrieval",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "doubao-pro-128k-240628",
+    "type": "tokens",
+    "channel_type": 2,
+    "input": 0.571,
+    "output": 0.571
+  },
+  {
+    "model": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "pixtral-12b-2409",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.2,
+    "output": 0.2
+  },
+  {
+    "model": "ministral-8b-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "qwq-32b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Meta-Llama-3-70B-Instruct-Turbo",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.45,
+    "output": 0.45
+  },
+  {
+    "model": "command-a-03-2025",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gemini-2.5-flash",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.175,
+    "output": 0.175
+  },
+  {
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Meta-Llama-Guard-3-8B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "pixtral-12b-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.2,
+    "output": 0.2
+  },
+  {
+    "model": "mistralai/Mistral-7B-Instruct-v0.1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "Cartesia/Sonic-2",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-saba-2502",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistralai/Mixtral-8x7B-v0.1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.135,
+    "output": 0.135
+  },
+  {
+    "model": "doubao-1-5-thinking-pro-250415",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-small-2503",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "claude-sonnet-4-20250514-thinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "Meta-Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4o-image",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4.1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4.1-mini-2025-04-14",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4o-image-vip",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "open-mistral-nemo-2407",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.1,
+    "output": 0.1
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "BAAI/bge-large-en-v1.5",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.05,
+    "output": 0.05
+  },
+  {
+    "model": "black-forest-labs/FLUX.1-schnell",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "moonshot-v1-128k-vision-preview",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "command-r7b-arabic-02-2025",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/llama-prompt-guard-2-86m",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "llama3.2:latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "rerank-v3.5",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-ocr-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "omni-moderation-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.0,
+    "output": 0.0
+  },
+  {
+    "model": "gemini-2.5-pro-exp",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-2-1212",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "Meta-Llama-3-1-8B-Instruct-FP8",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.05,
+    "output": 0.05
+  },
+  {
+    "model": "deepseek-search",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.14
+  },
+  {
+    "model": "DeepSeek-R1-Distill-Qwen-14B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.14
+  },
+  {
+    "model": "command-light-nightly",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.15,
+    "output": 0.15
+  },
+  {
+    "model": "pixtral-large-2411",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "net-gpt-4o-mini",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "deepseek-reasoner",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4.1-nano-2025-04-14",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4o-all",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "allam-2-7b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-large-2411",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1.5,
+    "output": 4.5
+  },
+  {
+    "model": "gemini-exp-1206",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/Llama-3-8b-chat-hf",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.05,
+    "output": 0.05
+  },
+  {
+    "model": "mistral-medium-2505",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1.355,
+    "output": 4.065
+  },
+  {
+    "model": "c4ai-aya-vision-32b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gpt-4o-search",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-beta",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "codestral-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.5,
+    "output": 0.5
+  },
+  {
+    "model": "mj_upload",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-small-2312",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1
+  },
+  {
+    "model": "command-r7b-12-2024",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o4-mini-2025-04-16",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "Meta-Llama-3-2-3B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "moonshot-v1-auto",
+    "type": "tokens",
+    "channel_type": 2,
+    "input": 0.857,
+    "output": 0.857
+  },
+  {
+    "model": "gpt-4o-2024-11-20",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 2.5,
+    "output": 12.5
+  },
+  {
+    "model": "grok-3-mini-fast",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "grok-3-mini-beta",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "kimi-thinking-preview",
+    "type": "tokens",
+    "channel_type": 2,
+    "input": 1.429,
+    "output": 1.429
+  },
+  {
+    "model": "MAI-DS-R1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "omni-moderation-2024-09-26",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.0,
+    "output": 0.0
+  },
+  {
+    "model": "moonshot-v1-32k-vision-preview",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "chirp-v3-5",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "black-forest-labs/FLUX.1-dev",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "mistral-small-2501",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.5,
+    "output": 0.5
+  },
+  {
+    "model": "compound-beta",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "o3-all",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "BAAI/bge-base-en-v1.5",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.035,
+    "output": 0.035
+  },
+  {
+    "model": "ministral-3b-2410",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "gemini-2.5-flash-preview-04-17-thinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.175,
+    "output": 0.175
+  },
+  {
+    "model": "o3-mini-high-all",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.125,
+    "output": 0.375
+  },
+  {
+    "model": "gpt-4.1-nano",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "ministral-8b-2410",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "codestral-mamba-2407",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
+    "model": "distil-whisper-large-v3-en",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
+  },
+  {
     "model": "babbage-002",
     "type": "tokens",
     "channel_type": 1,
