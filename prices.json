@@ -2,7 +2,7 @@
   {
     "model": "gpt-image-1",
     "type": "tokens",
-    "channel_type": 2,
+    "channel_type": 1,
     "input": 0.1,
     "output": 0.1
   },
@@ -142,9 +142,9 @@
   {
     "model": "gpt-image-1-vip",
     "type": "tokens",
-    "channel_type": 2,
-    "input": 0.1,
-    "output": 0.1
+    "channel_type": 1,
+    "input": 0.075,
+    "output": 0.3
   },
   {
     "model": "mistralai/Mistral-7B-Instruct-v0.3",
