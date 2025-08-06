@@ -3449,5 +3449,1232 @@
     "channel_type": 38,
     "input": 0.075,
     "output": 0.3
+  },
+  {
+    "model": "o3-deep-research",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-14B-Instruct-1M",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 5,
+    "output": 5
+  },
+  {
+    "model": "PaddlePaddle/ERNIE-4.5-21B-A3B-PT",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.2,
+    "output": 0.8
+  },
+  {
+    "model": "qwen/qwen3-32b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-1.5-flash-8b-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-flash-lite",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.05,
+    "output": 0.2
+  },
+  {
+    "model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "mistral-ocr-2505",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-flash-lite",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "free:QwQ-32B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "magistral-small-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Menlo/Jan-nano",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-pro-nothinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.07,
+    "output": 0.07
+  },
+  {
+    "model": "doubao-seed-1-6-flash-250615",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "embedding-001",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-pro-preview-05-06-nothinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-flash-thinking-exp-1219",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen3-235B-A22B-Instruct-2507-FP8",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "XGenerationLab/XiYanSQL-QwenCoder-32B-2412",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-flash-preview-05-20-nothinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "imagen-4.0-fast-generate-preview-06-06",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "o3-pro-2025-06-10",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "mistral-small-2506",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "o4-mini-deep-research-2025-06-26",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "LLM-Research/Llama-4-Maverick-17B-128E-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 0.135,
+    "output": 0.425
+  },
+  {
+    "model": "opencompass/CompassJudger-1-32B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-235B-A22B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-30B-A3B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gpt-4o-mini-tts",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "MiniMax/MiniMax-M1-80k",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "flux.1.1-pro",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-flash-thinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "codestral-embed-2505",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "free:Qwen3-30B-A3B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gpt-4o-mini-audio-preview-2024-12-17",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-pro-preview-tts",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "deepseek-r1:7b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-14B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "qwen3-235b-a22b-instruct-2507",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-pro-nothinking-128",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "devstral-small-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-embedding-exp",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "o3-pro",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "QwQ-32B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemma-3n-e2b-it",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-pro-thinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemma-3-27b-it",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-flash-exp",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "PaddlePaddle/ERNIE-4.5-VL-28B-A3B-PT",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "flux.1-kontext-max",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-embedding-exp-03-07",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/QVQ-72B-Preview",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "mistralai/Ministral-8B-Instruct-2410",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "devstral-small-2505",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemma-3-1b-it",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-pro-thinking-128",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-flash-preview-tts",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "PaddlePaddle/ERNIE-4.5-0.3B-PT",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-32B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "codestral-embed",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "grok-4",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "aqa",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-flash-preview-image-generation",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "moonshotai/kimi-k2-instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-pro",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "PaddlePaddle/ERNIE-4.5-300B-A47B-PT",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "o1-pro-2025-03-19",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "grok-3-c",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "LLM-Research/Llama-4-Scout-17B-16E-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-R1-0528",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gpt-4o-audio-preview-2024-12-17",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gpt-4o-mini-realtime-preview-2024-12-17",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemma-3-4b-it",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "mistralai/Mistral-Small-Instruct-2409",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemma-3n-e4b-it",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-14B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-pro-exp-search",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2-VL-7B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "pro:QwQ-32B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "kimi-k2-0711-preview",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "moonshotai/Kimi-K2-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "embedding-gecko-001",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/QwQ-32B-Preview",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-pro-preview-03-25-nothinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "command-a-vision",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "grok-4-0709",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "text-embedding-004",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "stepfun-ai/step3",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gpt-4o-transcribe",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "grok-4-c",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "mistralai/Mistral-Large-Instruct-2407",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "LLM-Research/c4ai-command-r-plus-08-2024",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "flux.1-kontext-pro",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-flash-001",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gpt-4o-realtime-preview-2024-12-17",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-flash-exp-image",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-flash-lite-001",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "doubao-seed-1-6-250615",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-4B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "o3-mini-high",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-32B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "XGenerationLab/XiYanSQL-QwenCoder-32B-2504",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-VL-32B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "flux.1-dev",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "imagen-4.0-generate-preview-06-06",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-pro-preview-06-05-nothinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-1.7B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "qwen2.5-72b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "qwen3-coder-480b-a35b-instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-embedding-001",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen3-32B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "default",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-flash-thinking-exp",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gpt-4o-mini-transcribe",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Wan-AI/Wan2.1-T2V-1.3B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "ZhipuAI/GLM-4.5",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "o4-mini-deep-research",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "doubao-seed-1-6-thinking-250615",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-1.5-flash-8b-001",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "MiniMax-M1",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-flash-lite-preview-06-17",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "o3-deep-research-2025-06-26",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-flash-exp-image-generation",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "magistral-small-2506",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemma-3-12b-it",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "magistral-medium-2506",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.0-flash-exp-search",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "flux.1-pro",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "phi-4",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "phi-4-reasoning",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "imagen-4.0-ultra-generate-preview-06-06",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "magistral-medium-latest",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gpt-4o-mini-tts-2025-03-20",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "gemini-2.5-pro-preview-05-06-thinking",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-0.6B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen3-8B",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "qwen3-235b-a22b",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "learnlm-2.0-flash-experimental",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-7B-Instruct-1M",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "flux.1-schnell",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
+  },
+  {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "type": "tokens",
+    "channel_type": 1,
+    "input": 1,
+    "output": 1,
+    "note": "Pricing unavailable"
   }
 ]
