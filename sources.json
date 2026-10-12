@@ -1,0 +1,8 @@
+{
+  "models": {
+    "claude-sonnet-5-5": "anthropic/claude-sonnet-5.5",
+    "claude-haiku-5-5": "anthropic/claude-haiku-5.5",
+    "claude-opus-5-5": "anthropic/claude-opus-5.5"
+  },
+  "overrides": {}
+}

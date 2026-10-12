@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "success": true,
+  "generated_at": "2026-10-12T14:19:20.149160+00:00",
+  "units": "USD per million tokens in expressions; source prices are USD per token",
+  "data": {
+    "billing_mode": {
+      "claude-haiku-5-5": "tiered_expr",
+      "claude-opus-5-5": "tiered_expr",
+      "claude-sonnet-5-5": "tiered_expr"
+    },
+    "billing_expr": {
+      "claude-haiku-5-5": "len < 100000 ? tier(\"standard\", p * 0.1 + c * 0.5 + cr * 0.01 + cc * 0.125 + cc1h * 0.2) : tier(\"context_100000\", p * 0.5 + c * 2.5 + cr * 0.05 + cc * 0.625 + cc1h * 1)",
+      "claude-opus-5-5": "tier(\"standard\", p * 4 + c * 20 + cr * 0.2 + cc * 5 + cc1h * 8)",
+      "claude-sonnet-5-5": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 4)"
+    }
+  },
+  "source_metadata": {
+    "claude-haiku-5-5": {
+      "source": "openrouter",
+      "source_model": "anthropic/claude-haiku-5.5",
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.000000125",
+        "input_cache_write_1h": "0.0000002",
+        "overrides": [
+          {
+            "min_prompt_tokens": 100000,
+            "prompt": "0.0000005",
+            "completion": "0.0000025",
+            "input_cache_read": "0.00000005",
+            "input_cache_write": "0.000000625",
+            "input_cache_write_1h": "0.000001"
+          }
+        ]
+      }
+    },
+    "claude-opus-5-5": {
+      "source": "openrouter",
+      "source_model": "anthropic/claude-opus-5.5",
+      "pricing": {
+        "prompt": "0.000004",
+        "completion": "0.00002",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.000005",
+        "input_cache_write_1h": "0.000008"
+      }
+    },
+    "claude-sonnet-5-5": {
+      "source": "openrouter",
+      "source_model": "anthropic/claude-sonnet-5.5",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000025",
+        "input_cache_write_1h": "0.000004"
+      }
+    }
+  }
+}
