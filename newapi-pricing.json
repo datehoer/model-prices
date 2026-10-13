@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "success": true,
-  "generated_at": "2026-10-13T05:43:09.943331+00:00",
+  "generated_at": "2026-10-13T06:48:43.510536+00:00",
   "units": "Token coefficients: USD per million tokens; fixed/task amounts: USD; OpenRouter source prices: USD per token",
   "data": {
     "billing_mode": {
@@ -133,6 +133,7 @@
       "grok-imagine-image-quality": "tiered_expr",
       "grok-imagine-video-1.5": "tiered_expr",
       "gui-plus": "tiered_expr",
+      "kimi-k2.7-code-highspeed": "tiered_expr",
       "magistral-small-latest": "tiered_expr",
       "meituan-longcat/LongCat-Flash-Lite": "tiered_expr",
       "midjourney": "tiered_expr",
@@ -187,6 +188,8 @@
       "qwen3.8-omni-flash-realtime": "tiered_expr",
       "tongyi-xiaomi-analysis-flash": "tiered_expr",
       "tongyi-xiaomi-analysis-pro": "tiered_expr",
+      "unisound/unisound-u2": "tiered_expr",
+      "vanchin/deepseek-ocr": "tiered_expr",
       "vanchin/deepseek-v3": "tiered_expr",
       "vanchin/deepseek-v3.2-think": "tiered_expr",
       "z-image-turbo": "tiered_expr"
@@ -212,7 +215,7 @@
       "claude-sonnet-5-5": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 4)",
       "deepseek-ai/DeepSeek-V4-Flash-0731": "tier(\"standard\", p * 0.016 + c * 0.64 + cr * 0.016)",
       "deepseek-v4-flash-0731": "tier(\"standard\", p * 0.016 + c * 0.64 + cr * 0.016)",
-      "deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 0.66 + c * 1.98 + cr * 0.022)",
+      "deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 1.32 + c * 3.96 + cr * 0.044)",
       "gemini-3.5-flash-lite": "tier(\"standard\", p * 0.3 + c * 2.5 + cr * 0.03 + cc * 0.0833333333333333)",
       "gemini-3.6-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "gemini-3.7-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
@@ -253,7 +256,7 @@
       "models/gemini-3.8-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "models/gemini-flash-latest": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "models/gemini-pro-latest": "len < 200000 ? tier(\"standard\", p * 2 + c * 12 + cr * 0.2 + cc * 0.375) : tier(\"context_200000\", p * 4 + c * 18 + cr * 0.4 + cc * 0.375)",
-      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.0765 + c * 0.255 + cr * 0.0425)",
+      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.09 + c * 0.3 + cr * 0.05)",
       "models/gemma-4-31b-it": "tier(\"standard\", p * 0.09 + c * 0.34 + cr * 0.05)",
       "nex-agi/Nex-N2.5-Pro": "tier(\"standard\", p * 0.075 + c * 0.25 + cr * 0.015)",
       "nex-agi/Nex-N2.5-mini": "tier(\"standard\", p * 0.025 + c * 0.1 + cr * 0.0025)",
@@ -268,8 +271,8 @@
       "vanchin/deepseek-r1": "tier(\"standard\", p * 0.7 + c * 2.5)",
       "vanchin/deepseek-v3.1-terminus": "tier(\"standard\", p * 0.27 + c * 1)",
       "vanchin/deepseek-v4-pro": "tier(\"standard\", p * 0.95526 + c * 1.91052 + cr * 0.079605)",
-      "vanchin/deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 0.66 + c * 1.98 + cr * 0.022)",
-      "vanchin/deepseek-v4.1-flash": "tier(\"standard\", p * 0.045 + c * 0.891 + cr * 0.0054)",
+      "vanchin/deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 1.32 + c * 3.96 + cr * 0.044)",
+      "vanchin/deepseek-v4.1-flash": "tier(\"standard\", p * 0.0441 + c * 0.891 + cr * 0.0054)",
       "MedAIBase/AntAngelMed": "tier(\"free_inference\", p * 0 + c * 0)",
       "MiniMax/MiniMax-M1-80k": "tier(\"free_inference\", p * 0 + c * 0)",
       "MusePublic/Qwen-Image-Edit": "tier(\"free_inference\", p * 0 + c * 0)",
@@ -320,6 +323,7 @@
       "grok-imagine-image-quality": "tier(\"upstream\", fixed(0.02)) * image_count",
       "grok-imagine-video-1.5": "u(\"resolution\") == \"1080p\" ? tier(\"1080p\", u(\"seconds\") * 0.25 + u(\"input_images\") * 0.01) : u(\"resolution\") == \"720p\" ? tier(\"720p\", u(\"seconds\") * 0.14 + u(\"input_images\") * 0.01) : tier(\"480p\", u(\"seconds\") * 0.08 + u(\"input_images\") * 0.01)",
       "gui-plus": "tier(\"beijing_1\", p * 0.221238938053 + c * 0.663716814159)",
+      "kimi-k2.7-code-highspeed": "tier(\"standard\", p * 1.917404129794 + c * 7.964601769912 + cr * 0.383480825959)",
       "magistral-small-latest": "tier(\"standard\", p * 0.15 + cr * 0.015 + c * 0.6)",
       "meituan-longcat/LongCat-Flash-Lite": "tier(\"free_inference\", p * 0 + c * 0)",
       "midjourney": "tier(\"upstream\", fixed(0.036873156342))",
@@ -374,6 +378,8 @@
       "qwen3.8-omni-flash-realtime": "tier(\"beijing\", p * 0.221238938053 + ai * 0.884955752212 + c * 0.663716814159 + ao * 1.769911504425)",
       "tongyi-xiaomi-analysis-flash": "tier(\"beijing_1\", p * 0.029498525074 + c * 0.058997050147 + cr * 0.005899705015)",
       "tongyi-xiaomi-analysis-pro": "tier(\"beijing_1\", p * 0.147492625369 + c * 0.398230088496 + cr * 0.029498525074)",
+      "unisound/unisound-u2": "tier(\"standard\", p * 0.147492625369 + c * 0.294985250737)",
+      "vanchin/deepseek-ocr": "tier(\"standard\", p * 0.03185840708 + c * 0.03185840708)",
       "vanchin/deepseek-v3": "tier(\"beijing_1\", p * 0.294985250737 + c * 1.17994100295 + cr * 0.117994100295)",
       "vanchin/deepseek-v3.2-think": "tier(\"beijing_1\", p * 0.294985250737 + c * 0.442477876106 + cr * 0.029498525074)",
       "z-image-turbo": "u(\"prompt_extend\") == true ? tier(\"rewrite\", u(\"image_count\") * 0.029498525074) : tier(\"standard\", u(\"image_count\") * 0.014749262537)"
@@ -591,9 +597,9 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-pro-0813",
       "pricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00000198",
-        "input_cache_read": "0.000000022",
+        "prompt": "0.00000132",
+        "completion": "0.00000396",
+        "input_cache_read": "0.000000044",
         "overrides": [
           {
             "utc_days": [
@@ -1280,9 +1286,9 @@
       "source": "openrouter",
       "source_model": "google/gemma-4-26b-a4b-it",
       "pricing": {
-        "prompt": "0.0000000765",
-        "completion": "0.000000255",
-        "input_cache_read": "0.0000000425"
+        "prompt": "0.00000009",
+        "completion": "0.0000003",
+        "input_cache_read": "0.00000005"
       }
     },
     "models/gemma-4-31b-it": {
@@ -1438,9 +1444,9 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-pro-0813",
       "pricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00000198",
-        "input_cache_read": "0.000000022",
+        "prompt": "0.00000132",
+        "completion": "0.00000396",
+        "input_cache_read": "0.000000044",
         "overrides": [
           {
             "utc_days": [
@@ -1528,7 +1534,7 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4.1-flash",
       "pricing": {
-        "prompt": "0.000000045",
+        "prompt": "0.0000000441",
         "completion": "0.000000891",
         "input_cache_read": "0.0000000054"
       }
@@ -1931,6 +1937,14 @@
       "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
       "source_model": "gui-plus",
       "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache",
+      "source": "official_manual"
+    },
+    "kimi-k2.7-code-highspeed": {
+      "expression": "tier(\"standard\", p * 1.917404129794 + c * 7.964601769912 + cr * 0.383480825959)",
+      "unit": "token",
+      "source_url": "https://platform.kimi.com/docs/pricing/chat",
+      "source_model": "kimi-k2.7-code-highspeed",
+      "notes": "Current official CNY per million token price verified on 2026-10-13; CNY converted at configured USDExchangeRate=6.78. Alibaba contracts are Beijing region. Unpublished cache categories are omitted. Kimi K2.7 Code HighSpeed official cache read rate is CNY 2.60/M.",
       "source": "official_manual"
     },
     "magistral-small-latest": {
@@ -2363,6 +2377,22 @@
       "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
       "source_model": "tongyi-xiaomi-analysis-pro",
       "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache",
+      "source": "official_manual"
+    },
+    "unisound/unisound-u2": {
+      "expression": "tier(\"standard\", p * 0.147492625369 + c * 0.294985250737)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "unisound/unisound-u2",
+      "notes": "Current official Beijing CNY per million token prices verified on 2026-10-13; CNY converted at configured USDExchangeRate=6.78. No separate cache discount is listed for these exact models in the current price table.",
+      "source": "official_manual"
+    },
+    "vanchin/deepseek-ocr": {
+      "expression": "tier(\"standard\", p * 0.03185840708 + c * 0.03185840708)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "vanchin/deepseek-ocr",
+      "notes": "Current official Beijing CNY per million token prices verified on 2026-10-13; CNY converted at configured USDExchangeRate=6.78. No separate cache discount is listed for these exact models in the current price table.",
       "source": "official_manual"
     },
     "vanchin/deepseek-v3": {

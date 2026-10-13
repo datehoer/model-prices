@@ -431,6 +431,13 @@
       "source_model": "gui-plus",
       "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
     },
+    "kimi-k2.7-code-highspeed": {
+      "expression": "tier(\"standard\", p * 1.917404129794 + c * 7.964601769912 + cr * 0.383480825959)",
+      "unit": "token",
+      "source_url": "https://platform.kimi.com/docs/pricing/chat",
+      "source_model": "kimi-k2.7-code-highspeed",
+      "notes": "Current official CNY per million token price verified on 2026-10-13; CNY converted at configured USDExchangeRate=6.78. Alibaba contracts are Beijing region. Unpublished cache categories are omitted. Kimi K2.7 Code HighSpeed official cache read rate is CNY 2.60/M."
+    },
     "magistral-small-latest": {
       "expression": "tier(\"standard\", p * 0.15 + cr * 0.015 + c * 0.6)",
       "unit": "token",
@@ -808,6 +815,20 @@
       "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
       "source_model": "tongyi-xiaomi-analysis-pro",
       "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "unisound/unisound-u2": {
+      "expression": "tier(\"standard\", p * 0.147492625369 + c * 0.294985250737)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "unisound/unisound-u2",
+      "notes": "Current official Beijing CNY per million token prices verified on 2026-10-13; CNY converted at configured USDExchangeRate=6.78. No separate cache discount is listed for these exact models in the current price table."
+    },
+    "vanchin/deepseek-ocr": {
+      "expression": "tier(\"standard\", p * 0.03185840708 + c * 0.03185840708)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "vanchin/deepseek-ocr",
+      "notes": "Current official Beijing CNY per million token prices verified on 2026-10-13; CNY converted at configured USDExchangeRate=6.78. No separate cache discount is listed for these exact models in the current price table."
     },
     "vanchin/deepseek-v3": {
       "expression": "tier(\"beijing_1\", p * 0.294985250737 + c * 1.17994100295 + cr * 0.117994100295)",
