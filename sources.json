@@ -39,6 +39,7 @@
     "grok-4.20-multi-agent": "x-ai/grok-4.20-multi-agent",
     "grok-4.5": "x-ai/grok-4.5",
     "grok-4.6": "x-ai/grok-4.6",
+    "grok-4.7": "x-ai/grok-4.7",
     "kimi-k2.7-code": "moonshotai/kimi-k2.7-code",
     "kimi-k3": "moonshotai/kimi-k3",
     "kimi/kimi-k2.7-code": "moonshotai/kimi-k2.7-code",
@@ -185,6 +186,20 @@
       "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
       "source_model": "XGenerationLab/XiYanSQL-QwenCoder-32B-2504",
       "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "canopylabs/orpheus-arabic-saudi": {
+      "expression": "tier(\"characters\", text_chars * 40)",
+      "unit": "measured",
+      "source_url": "https://console.groq.com/docs/models",
+      "source_model": "canopylabs/orpheus-arabic-saudi",
+      "notes": "USD 40 per million input characters, Unicode code points. Speech endpoint only. Official pricing verified 2026-10-13. Requires the gateway measured audio/character update."
+    },
+    "canopylabs/orpheus-v1-english": {
+      "expression": "tier(\"characters\", text_chars * 22)",
+      "unit": "measured",
+      "source_url": "https://console.groq.com/docs/model/canopylabs/orpheus-v1-english",
+      "source_model": "canopylabs/orpheus-v1-english",
+      "notes": "USD 22 per million input characters, Unicode code points. Speech endpoint only. Official pricing verified 2026-10-13. Requires the gateway measured audio/character update."
     },
     "chat-latest": {
       "expression": "tier(\"standard\", p * 5 + cr * 0.5 + c * 30)",
@@ -395,6 +410,13 @@
       "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime",
       "source_model": "gpt-realtime-2025-08-28",
       "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-transcribe": {
+      "expression": "tier(\"minute\", usd(audio_seconds / 60 * 0.0045))",
+      "unit": "measured",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-transcribe",
+      "source_model": "gpt-transcribe",
+      "notes": "USD 0.0045 per audio minute. This binding supports measured file transcription/translation; realtime sessions need a separate duration event pipeline and are rejected. Official pricing verified 2026-10-13. Requires the gateway measured audio/character update."
     },
     "grok-4.5-c": {
       "expression": "tier(\"upstream\", fixed(0.01))",
@@ -843,6 +865,13 @@
       "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
       "source_model": "vanchin/deepseek-v3.2-think",
       "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "whisper-large-v3-turbo": {
+      "expression": "tier(\"hour\", usd(max(audio_seconds, 10) / 3600 * 0.04))",
+      "unit": "measured",
+      "source_url": "https://console.groq.com/docs/speech-to-text",
+      "source_model": "whisper-large-v3-turbo",
+      "notes": "USD 0.04 per hour, minimum 10 billable seconds. File transcription only; URL submissions without measurable files fail before upstream. Official pricing verified 2026-10-13. Requires the gateway measured audio/character update."
     },
     "z-image-turbo": {
       "expression": "u(\"prompt_extend\") == true ? tier(\"rewrite\", u(\"image_count\") * 0.029498525074) : tier(\"standard\", u(\"image_count\") * 0.014749262537)",

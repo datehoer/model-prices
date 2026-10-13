@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "success": true,
-  "generated_at": "2026-10-13T06:49:05.791980+00:00",
+  "generated_at": "2026-10-13T07:19:04.362172+00:00",
   "units": "Token coefficients: USD per million tokens; fixed/task amounts: USD; OpenRouter source prices: USD per token",
   "data": {
     "billing_mode": {
@@ -44,6 +44,7 @@
       "grok-4.20-multi-agent": "tiered_expr",
       "grok-4.5": "tiered_expr",
       "grok-4.6": "tiered_expr",
+      "grok-4.7": "tiered_expr",
       "kimi-k2.7-code": "tiered_expr",
       "kimi-k3": "tiered_expr",
       "kimi/kimi-k2.7-code": "tiered_expr",
@@ -98,6 +99,8 @@
       "Shanghai_AI_Laboratory/Intern-S2-Preview": "tiered_expr",
       "XGenerationLab/XiYanSQL-QwenCoder-32B-2412": "tiered_expr",
       "XGenerationLab/XiYanSQL-QwenCoder-32B-2504": "tiered_expr",
+      "canopylabs/orpheus-arabic-saudi": "tiered_expr",
+      "canopylabs/orpheus-v1-english": "tiered_expr",
       "chat-latest": "tiered_expr",
       "codestral-embed": "tiered_expr",
       "codestral-embed-2505": "tiered_expr",
@@ -128,6 +131,7 @@
       "gpt-realtime-2.1": "tiered_expr",
       "gpt-realtime-2.1-mini": "tiered_expr",
       "gpt-realtime-2025-08-28": "tiered_expr",
+      "gpt-transcribe": "tiered_expr",
       "grok-4.5-c": "tiered_expr",
       "grok-4.5-nsfw": "tiered_expr",
       "grok-imagine-image-quality": "tiered_expr",
@@ -192,6 +196,7 @@
       "vanchin/deepseek-ocr": "tiered_expr",
       "vanchin/deepseek-v3": "tiered_expr",
       "vanchin/deepseek-v3.2-think": "tiered_expr",
+      "whisper-large-v3-turbo": "tiered_expr",
       "z-image-turbo": "tiered_expr"
     },
     "billing_expr": {
@@ -234,6 +239,7 @@
       "grok-4.20-multi-agent": "len < 200000 ? tier(\"standard\", p * 1.25 + c * 2.5 + cr * 0.2) : tier(\"context_200000\", p * 2.5 + c * 5 + cr * 0.4)",
       "grok-4.5": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.3) : tier(\"context_200000\", p * 4 + c * 12 + cr * 0.6)",
       "grok-4.6": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
+      "grok-4.7": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
       "kimi-k2.7-code": "tier(\"standard\", p * 0.6712 + c * 3.35 + cr * 0.18)",
       "kimi-k3": "tier(\"standard\", p * 0.73 + c * 13.5 + cr * 0.55)",
       "kimi/kimi-k2.7-code": "tier(\"standard\", p * 0.6712 + c * 3.35 + cr * 0.18)",
@@ -288,6 +294,8 @@
       "Shanghai_AI_Laboratory/Intern-S2-Preview": "tier(\"free_inference\", p * 0 + c * 0)",
       "XGenerationLab/XiYanSQL-QwenCoder-32B-2412": "tier(\"free_inference\", p * 0 + c * 0)",
       "XGenerationLab/XiYanSQL-QwenCoder-32B-2504": "tier(\"free_inference\", p * 0 + c * 0)",
+      "canopylabs/orpheus-arabic-saudi": "tier(\"characters\", text_chars * 40)",
+      "canopylabs/orpheus-v1-english": "tier(\"characters\", text_chars * 22)",
       "chat-latest": "tier(\"standard\", p * 5 + cr * 0.5 + c * 30)",
       "codestral-embed": "tier(\"standard\", p * 0.15 + cr * 0.015)",
       "codestral-embed-2505": "tier(\"standard\", p * 0.15 + cr * 0.015)",
@@ -318,6 +326,7 @@
       "gpt-realtime-2.1": "tier(\"standard\", p * 4 + cr * 0.4 + c * 24 + ai * 32 + ai_cr * 0.4 + ao * 64 + img * 5 + img_cr * 0.5)",
       "gpt-realtime-2.1-mini": "tier(\"standard\", p * 0.6 + cr * 0.06 + c * 2.4 + ai * 10 + ai_cr * 0.3 + ao * 20 + img * 0.8 + img_cr * 0.08)",
       "gpt-realtime-2025-08-28": "tier(\"standard\", p * 4 + cr * 0.4 + c * 16 + ai * 32 + ai_cr * 0.4 + ao * 64 + img * 5 + img_cr * 0.5)",
+      "gpt-transcribe": "tier(\"minute\", usd(audio_seconds / 60 * 0.0045))",
       "grok-4.5-c": "tier(\"upstream\", fixed(0.01))",
       "grok-4.5-nsfw": "len < 200000 ? tier(\"Short context\", p * 2 + c * 6 + cc * 0.3) : tier(\"Long context\", p * 4 + c * 12 + cc * 0.6)",
       "grok-imagine-image-quality": "tier(\"upstream\", fixed(0.02)) * image_count",
@@ -382,6 +391,7 @@
       "vanchin/deepseek-ocr": "tier(\"standard\", p * 0.03185840708 + c * 0.03185840708)",
       "vanchin/deepseek-v3": "tier(\"beijing_1\", p * 0.294985250737 + c * 1.17994100295 + cr * 0.117994100295)",
       "vanchin/deepseek-v3.2-think": "tier(\"beijing_1\", p * 0.294985250737 + c * 0.442477876106 + cr * 0.029498525074)",
+      "whisper-large-v3-turbo": "tier(\"hour\", usd(max(audio_seconds, 10) / 3600 * 0.04))",
       "z-image-turbo": "u(\"prompt_extend\") == true ? tier(\"rewrite\", u(\"image_count\") * 0.029498525074) : tier(\"standard\", u(\"image_count\") * 0.014749262537)"
     }
   },
@@ -941,6 +951,24 @@
     "grok-4.6": {
       "source": "openrouter",
       "source_model": "x-ai/grok-4.6",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "web_search": "0.005",
+        "input_cache_read": "0.0000005",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.000004",
+            "completion": "0.000012",
+            "input_cache_read": "0.000001"
+          }
+        ]
+      }
+    },
+    "grok-4.7": {
+      "source": "openrouter",
+      "source_model": "x-ai/grok-4.7",
       "pricing": {
         "prompt": "0.000002",
         "completion": "0.000006",
@@ -1659,6 +1687,22 @@
       "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits.",
       "source": "official_manual"
     },
+    "canopylabs/orpheus-arabic-saudi": {
+      "expression": "tier(\"characters\", text_chars * 40)",
+      "unit": "measured",
+      "source_url": "https://console.groq.com/docs/models",
+      "source_model": "canopylabs/orpheus-arabic-saudi",
+      "notes": "USD 40 per million input characters, Unicode code points. Speech endpoint only. Official pricing verified 2026-10-13. Requires the gateway measured audio/character update.",
+      "source": "official_manual"
+    },
+    "canopylabs/orpheus-v1-english": {
+      "expression": "tier(\"characters\", text_chars * 22)",
+      "unit": "measured",
+      "source_url": "https://console.groq.com/docs/model/canopylabs/orpheus-v1-english",
+      "source_model": "canopylabs/orpheus-v1-english",
+      "notes": "USD 22 per million input characters, Unicode code points. Speech endpoint only. Official pricing verified 2026-10-13. Requires the gateway measured audio/character update.",
+      "source": "official_manual"
+    },
     "chat-latest": {
       "expression": "tier(\"standard\", p * 5 + cr * 0.5 + c * 30)",
       "unit": "token",
@@ -1897,6 +1941,14 @@
       "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime",
       "source_model": "gpt-realtime-2025-08-28",
       "notes": "Standard rates from official OpenAI documentation; token modalities remain separate.",
+      "source": "official_manual"
+    },
+    "gpt-transcribe": {
+      "expression": "tier(\"minute\", usd(audio_seconds / 60 * 0.0045))",
+      "unit": "measured",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-transcribe",
+      "source_model": "gpt-transcribe",
+      "notes": "USD 0.0045 per audio minute. This binding supports measured file transcription/translation; realtime sessions need a separate duration event pipeline and are rejected. Official pricing verified 2026-10-13. Requires the gateway measured audio/character update.",
       "source": "official_manual"
     },
     "grok-4.5-c": {
@@ -2409,6 +2461,14 @@
       "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
       "source_model": "vanchin/deepseek-v3.2-think",
       "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache",
+      "source": "official_manual"
+    },
+    "whisper-large-v3-turbo": {
+      "expression": "tier(\"hour\", usd(max(audio_seconds, 10) / 3600 * 0.04))",
+      "unit": "measured",
+      "source_url": "https://console.groq.com/docs/speech-to-text",
+      "source_model": "whisper-large-v3-turbo",
+      "notes": "USD 0.04 per hour, minimum 10 billable seconds. File transcription only; URL submissions without measurable files fail before upstream. Official pricing verified 2026-10-13. Requires the gateway measured audio/character update.",
       "source": "official_manual"
     },
     "z-image-turbo": {

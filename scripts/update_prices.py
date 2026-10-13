@@ -119,7 +119,7 @@ def generate(sources, catalog):
         reference = urlsplit(contract.get("source_url", ""))
         if reference.scheme != "https" or not reference.hostname or reference.username:
             raise ValueError("manual contract requires an HTTPS reference")
-        if contract.get("unit") not in {"token", "request", "task_usage"}:
+        if contract.get("unit") not in {"token", "request", "task_usage", "measured"}:
             raise ValueError("invalid manual pricing unit")
         if not isinstance(contract.get("expression"), str) or not contract["expression"].strip():
             raise ValueError("manual contract requires an expression")

@@ -19,7 +19,7 @@ the last good catalog stays available. Existing unrelated models are not importe
 
 Verified vendor-specific prices can also be maintained in `sources.json` under
 `contracts`. Each explicit local ID requires an `expression`, `unit` (`token`,
-`request`, or `task_usage`) and an HTTPS `source_url`. Keep its region, currency,
+`request`, `task_usage`, or `measured`) and an HTTPS `source_url`. Keep its region, currency,
 conversion policy and exceptions in `notes`. This emits schema version 2, supported
 by New API's price-source reader alongside version 1. The gateway validates every
 expression and checks task expressions against the active plugin's usage schema
@@ -35,3 +35,10 @@ https://raw.githubusercontent.com/datehoer/model-prices/main/newapi-pricing.json
 
 Validate locally with `python3 -m unittest discover -s scripts -p 'test_*.py'`, then
 run `python3 scripts/update_prices.py`. The original `prices.json` remains independent.
+
+Measured audio/file and speech contracts use `audio_seconds` and `text_chars`.
+`usd(value)` expresses a physical-unit charge directly in dollars, e.g.
+`tier("audio", usd(max(audio_seconds, 10) / 3600 * 0.04))`. These require the
+gateway duration/character implementation; they reject incompatible endpoints
+or missing file duration before a paid upstream request. Realtime transcription
+and unrelated protocols are not covered by the file-duration meter.
