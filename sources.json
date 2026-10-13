@@ -20,6 +20,7 @@
     "claude-sonnet-5-5": "anthropic/claude-sonnet-5.5",
     "deepseek-ai/DeepSeek-V4-Flash-0731": "deepseek/deepseek-v4-flash-0731",
     "deepseek-v4-flash-0731": "deepseek/deepseek-v4-flash-0731",
+    "deepseek-v4-pro-0813": "deepseek/deepseek-v4-pro-0813",
     "gemini-3.5-flash-lite": "google/gemini-3.5-flash-lite",
     "gemini-3.6-flash": "google/gemini-3.6-flash",
     "gemini-3.7-flash": "google/gemini-3.7-flash",
@@ -45,9 +46,15 @@
     "mistral-medium-3": "mistralai/mistral-medium-3",
     "mistral-medium-3-5": "mistralai/mistral-medium-3-5",
     "mistral-medium-3.5": "mistralai/mistral-medium-3-5",
+    "models/gemini-2.5-flash": "google/gemini-2.5-flash",
+    "models/gemini-2.5-flash-lite": "google/gemini-2.5-flash-lite",
     "models/gemini-2.5-pro": "google/gemini-2.5-pro",
+    "models/gemini-3-flash-preview": "google/gemini-3-flash-preview",
+    "models/gemini-3.1-flash-lite": "google/gemini-3.1-flash-lite",
+    "models/gemini-3.1-flash-lite-preview": "google/gemini-3.1-flash-lite-preview",
     "models/gemini-3.1-pro-preview": "google/gemini-3.1-pro-preview",
     "models/gemini-3.1-pro-preview-customtools": "google/gemini-3.1-pro-preview-customtools",
+    "models/gemini-3.5-flash": "google/gemini-3.5-flash",
     "models/gemini-3.5-flash-lite": "google/gemini-3.5-flash-lite",
     "models/gemini-3.6-flash": "google/gemini-3.6-flash",
     "models/gemini-3.7-flash": "google/gemini-3.7-flash",
@@ -68,7 +75,760 @@
     "stepfun-ai/Step-3.7-Flash": "stepfun/step-3.7-flash",
     "vanchin/deepseek-r1": "deepseek/deepseek-r1",
     "vanchin/deepseek-v3.1-terminus": "deepseek/deepseek-v3.1-terminus",
-    "vanchin/deepseek-v4-pro": "deepseek/deepseek-v4-pro"
+    "vanchin/deepseek-v4-pro": "deepseek/deepseek-v4-pro",
+    "vanchin/deepseek-v4-pro-0813": "deepseek/deepseek-v4-pro-0813",
+    "vanchin/deepseek-v4.1-flash": "deepseek/deepseek-v4.1-flash"
   },
-  "overrides": {}
+  "overrides": {},
+  "contracts": {
+    "MedAIBase/AntAngelMed": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "MedAIBase/AntAngelMed",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "MiniMax/MiniMax-M1-80k": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "MiniMax/MiniMax-M1-80k",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "MusePublic/Qwen-Image-Edit": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "MusePublic/Qwen-Image-Edit",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "OpenGVLab/InternVL3_5-241B-A28B": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "OpenGVLab/InternVL3_5-241B-A28B",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "PaddlePaddle/ERNIE-4.5-0.3B-PT": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "PaddlePaddle/ERNIE-4.5-0.3B-PT",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "PaddlePaddle/ERNIE-4.5-21B-A3B-PT": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "PaddlePaddle/ERNIE-4.5-21B-A3B-PT",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "PaddlePaddle/ERNIE-4.5-300B-A47B-PT": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "PaddlePaddle/ERNIE-4.5-300B-A47B-PT",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "PaddlePaddle/ERNIE-4.5-VL-28B-A3B-PT": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "PaddlePaddle/ERNIE-4.5-VL-28B-A3B-PT",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "Qwen/Qwen-Image-Edit": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "Qwen/Qwen-Image-Edit",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "Qwen/Qwen3.8-Flash-Next": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "Qwen/Qwen3.8-Flash-Next",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "Shanghai_AI_Laboratory/Intern-S1": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "Shanghai_AI_Laboratory/Intern-S1",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "Shanghai_AI_Laboratory/Intern-S1-mini": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "Shanghai_AI_Laboratory/Intern-S1-mini",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "Shanghai_AI_Laboratory/Intern-S2-Preview": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "Shanghai_AI_Laboratory/Intern-S2-Preview",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "XGenerationLab/XiYanSQL-QwenCoder-32B-2412": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "XGenerationLab/XiYanSQL-QwenCoder-32B-2412",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "XGenerationLab/XiYanSQL-QwenCoder-32B-2504": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "XGenerationLab/XiYanSQL-QwenCoder-32B-2504",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "chat-latest": {
+      "expression": "tier(\"standard\", p * 5 + cr * 0.5 + c * 30)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "source_model": "chat-latest",
+      "notes": ""
+    },
+    "codestral-embed": {
+      "expression": "tier(\"standard\", p * 0.15 + cr * 0.015)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/inference/pricing",
+      "source_model": "codestral-embed",
+      "notes": "Official Mistral pricing; embedding input and cache terms are priced without a generated-output charge. Moderation is explicitly free."
+    },
+    "codestral-embed-2505": {
+      "expression": "tier(\"standard\", p * 0.15 + cr * 0.015)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/inference/pricing",
+      "source_model": "codestral-embed-2505",
+      "notes": "Official Mistral pricing; embedding input and cache terms are priced without a generated-output charge. Moderation is explicitly free."
+    },
+    "codex-auto-review": {
+      "expression": "len <= 272000 ? tier(\"standard\", p * 5 + c * 30 + cr * 0.5) : tier(\"long_context\", p * 10 + c * 45 + cr * 1)",
+      "unit": "token",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "codex-auto-review",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "deepseek-ai/DeepSeek-V4.1-Flash": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "early-access/EA-29B-A4B": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "early-access/EA-29B-A4B",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "gemini-3-pro-image": {
+      "expression": "tier(\"upstream\", p * 2 + c * 120)",
+      "unit": "token",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "gemini-3-pro-image",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "gemini-3.1-flash-image": {
+      "expression": "tier(\"upstream\", p * 0.5 + c * 60)",
+      "unit": "token",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "gemini-3.1-flash-image",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "gemini-3.1-flash-image-preview-1k-c": {
+      "expression": "tier(\"upstream\", fixed(0.0375)) * image_count",
+      "unit": "request",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "gemini-3.1-flash-image-preview-1k-c",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "gemini-3.1-flash-image-preview-2k-c": {
+      "expression": "tier(\"upstream\", fixed(0.05)) * image_count",
+      "unit": "request",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "gemini-3.1-flash-image-preview-2k-c",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "gemini-3.1-flash-lite-image": {
+      "expression": "tier(\"upstream\", p * 0.25 + c * 30)",
+      "unit": "token",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "gemini-3.1-flash-lite-image",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "gemini-robotics-er-1.6-preview": {
+      "expression": "tier(\"upstream\", p * 1 + c * 5)",
+      "unit": "token",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "gemini-robotics-er-1.6-preview",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "gemma4:31b": {
+      "expression": "tier(\"cloud\", p * 0.14 + c * 0.4 + cr * 0.05)",
+      "unit": "token",
+      "source_url": "https://ollama.com/pricing",
+      "source_model": "gemma4:31b",
+      "notes": "Ollama Cloud pay-as-you-go prices per million tokens, not local inference or a zero-token subscription assumption. Exact size suffixes correspond to the registered cloud models."
+    },
+    "glm-5.2-fast-preview": {
+      "expression": "tier(\"beijing_1\", p * 2.3598820059 + c * 8.259587020649 + cr * 0.589970501475)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "glm-5.2-fast-preview",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "gpt-4o-mini-transcribe": {
+      "expression": "tier(\"standard\", p * 1.25 + c * 5)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini-transcribe",
+      "source_model": "gpt-4o-mini-transcribe",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-4o-mini-transcribe-2025-03-20": {
+      "expression": "tier(\"standard\", p * 1.25 + c * 5)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini-transcribe",
+      "source_model": "gpt-4o-mini-transcribe-2025-03-20",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-4o-mini-transcribe-2025-12-15": {
+      "expression": "tier(\"standard\", p * 1.25 + c * 5)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini-transcribe",
+      "source_model": "gpt-4o-mini-transcribe-2025-12-15",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-4o-transcribe-diarize": {
+      "expression": "tier(\"standard\", p * 2.5 + c * 10)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+      "source_model": "gpt-4o-transcribe-diarize",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-5.6": {
+      "expression": "len <= 272000 ? tier(\"Short context\", p * 5 + c * 30 + cr * 0.5 + cc * 6.25) : tier(\"Long context\", p * 10 + c * 45 + cr * 1 + cc * 12.5)",
+      "unit": "token",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "gpt-5.6",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "gpt-audio": {
+      "expression": "tier(\"standard\", p * 2.5 + c * 10 + ai * 32 + ao * 64)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-audio",
+      "source_model": "gpt-audio",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-audio-1.5": {
+      "expression": "tier(\"standard\", p * 2.5 + c * 10 + ai * 32 + ao * 64)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-audio-1.5",
+      "source_model": "gpt-audio-1.5",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-audio-2025-08-28": {
+      "expression": "tier(\"standard\", p * 2.5 + c * 10 + ai * 32 + ao * 64)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-audio",
+      "source_model": "gpt-audio-2025-08-28",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-image-2-all": {
+      "expression": "tier(\"upstream\", fixed(0.007374631268)) * image_count",
+      "unit": "request",
+      "source_url": "https://duoyuanx.com/api/ratio_config",
+      "source_model": "gpt-image-2-all",
+      "notes": "Published upstream CNY display tariff (quota_display_type=CNY, usd_exchange_rate=1, quota_per_unit=500000), converted to this gateway USD expression units at its configured CNY/USD rate 6.78."
+    },
+    "gpt-realtime": {
+      "expression": "tier(\"standard\", p * 4 + cr * 0.4 + c * 16 + ai * 32 + ai_cr * 0.4 + ao * 64 + img * 5 + img_cr * 0.5)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime",
+      "source_model": "gpt-realtime",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-realtime-1.5": {
+      "expression": "tier(\"standard\", p * 4 + cr * 0.4 + c * 16 + ai * 32 + ai_cr * 0.4 + ao * 64 + img * 5 + img_cr * 0.5)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime-1.5",
+      "source_model": "gpt-realtime-1.5",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-realtime-2": {
+      "expression": "tier(\"standard\", p * 4 + cr * 0.4 + c * 24 + ai * 32 + ai_cr * 0.4 + ao * 64 + img * 5 + img_cr * 0.5)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime-2",
+      "source_model": "gpt-realtime-2",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-realtime-2.1": {
+      "expression": "tier(\"standard\", p * 4 + cr * 0.4 + c * 24 + ai * 32 + ai_cr * 0.4 + ao * 64 + img * 5 + img_cr * 0.5)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime-2",
+      "source_model": "gpt-realtime-2.1",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-realtime-2.1-mini": {
+      "expression": "tier(\"standard\", p * 0.6 + cr * 0.06 + c * 2.4 + ai * 10 + ai_cr * 0.3 + ao * 20 + img * 0.8 + img_cr * 0.08)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini",
+      "source_model": "gpt-realtime-2.1-mini",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "gpt-realtime-2025-08-28": {
+      "expression": "tier(\"standard\", p * 4 + cr * 0.4 + c * 16 + ai * 32 + ai_cr * 0.4 + ao * 64 + img * 5 + img_cr * 0.5)",
+      "unit": "token",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime",
+      "source_model": "gpt-realtime-2025-08-28",
+      "notes": "Standard rates from official OpenAI documentation; token modalities remain separate."
+    },
+    "grok-4.5-c": {
+      "expression": "tier(\"upstream\", fixed(0.01))",
+      "unit": "request",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "grok-4.5-c",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "grok-4.5-nsfw": {
+      "expression": "len < 200000 ? tier(\"Short context\", p * 2 + c * 6 + cc * 0.3) : tier(\"Long context\", p * 4 + c * 12 + cc * 0.6)",
+      "unit": "token",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "grok-4.5-nsfw",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "grok-imagine-image-quality": {
+      "expression": "tier(\"upstream\", fixed(0.02)) * image_count",
+      "unit": "request",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "grok-imagine-image-quality",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "grok-imagine-video-1.5": {
+      "expression": "u(\"resolution\") == \"1080p\" ? tier(\"1080p\", u(\"seconds\") * 0.25 + u(\"input_images\") * 0.01) : u(\"resolution\") == \"720p\" ? tier(\"720p\", u(\"seconds\") * 0.14 + u(\"input_images\") * 0.01) : tier(\"480p\", u(\"seconds\") * 0.08 + u(\"input_images\") * 0.01)",
+      "unit": "task_usage",
+      "source_url": "https://docs.x.ai/developers/pricing",
+      "source_model": "grok-imagine-video-1.5",
+      "notes": "USD per generated second plus input image. Resolution and image counts measured by native xAI task plugin. Moderated videos remain subject to generation charges per provider pricing."
+    },
+    "gui-plus": {
+      "expression": "tier(\"beijing_1\", p * 0.221238938053 + c * 0.663716814159)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "gui-plus",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "magistral-small-latest": {
+      "expression": "tier(\"standard\", p * 0.15 + cr * 0.015 + c * 0.6)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/inference/pricing",
+      "source_model": "magistral-small-latest",
+      "notes": "Alias identity confirmed by configured official Mistral /v1/models catalog on 2026-10-13; standard USD tariff. Tool invocation charges are separate."
+    },
+    "meituan-longcat/LongCat-Flash-Lite": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "meituan-longcat/LongCat-Flash-Lite",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "midjourney": {
+      "expression": "tier(\"upstream\", fixed(0.036873156342))",
+      "unit": "request",
+      "source_url": "https://duoyuanx.com/api/ratio_config",
+      "source_model": "midjourney",
+      "notes": "Published upstream CNY display tariff (quota_display_type=CNY, usd_exchange_rate=1, quota_per_unit=500000), converted to this gateway USD expression units at its configured CNY/USD rate 6.78."
+    },
+    "ministral-14b-latest": {
+      "expression": "tier(\"standard\", p * 0.2 + cr * 0.02 + c * 0.2)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/inference/pricing",
+      "source_model": "ministral-14b-latest",
+      "notes": "Alias identity confirmed by configured official Mistral /v1/models catalog on 2026-10-13; standard USD tariff. Tool invocation charges are separate."
+    },
+    "mistral-code-fim-latest": {
+      "expression": "tier(\"standard\", p * 0.3 + cr * 0.03 + c * 0.9)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/inference/pricing",
+      "source_model": "mistral-code-fim-latest",
+      "notes": "Alias identity confirmed by configured official Mistral /v1/models catalog on 2026-10-13; standard USD tariff. Tool invocation charges are separate."
+    },
+    "mistral-embed-2312": {
+      "expression": "tier(\"standard\", p * 0.1)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/models/mistral-embed-23-12",
+      "source_model": "mistral-embed-2312",
+      "notes": "Official Mistral pricing; embedding input and cache terms are priced without a generated-output charge. Moderation is explicitly free."
+    },
+    "mistral-large-3:675b": {
+      "expression": "tier(\"cloud\", p * 0.5 + c * 1.5)",
+      "unit": "token",
+      "source_url": "https://ollama.com/pricing",
+      "source_model": "mistral-large-3:675b",
+      "notes": "Ollama Cloud pay-as-you-go prices per million tokens, not local inference or a zero-token subscription assumption. Exact size suffixes correspond to the registered cloud models."
+    },
+    "mistral-medium": {
+      "expression": "tier(\"standard\", p * 1.5 + cr * 0.15 + c * 7.5)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/inference/pricing",
+      "source_model": "mistral-medium",
+      "notes": "Alias identity confirmed by configured official Mistral /v1/models catalog on 2026-10-13; standard USD tariff. Tool invocation charges are separate."
+    },
+    "mistral-moderation-2603": {
+      "expression": "tier(\"standard\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/models/mistral-moderation-26-03",
+      "source_model": "mistral-moderation-2603",
+      "notes": "Official Mistral pricing; embedding input and cache terms are priced without a generated-output charge. Moderation is explicitly free."
+    },
+    "mistral-vibe-cli-fast": {
+      "expression": "tier(\"standard\", p * 0.15 + cr * 0.015 + c * 0.6)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/inference/pricing",
+      "source_model": "mistral-vibe-cli-fast",
+      "notes": "Alias identity confirmed by configured official Mistral /v1/models catalog on 2026-10-13; standard USD tariff. Tool invocation charges are separate."
+    },
+    "mistral-vibe-cli-latest": {
+      "expression": "tier(\"standard\", p * 1.5 + cr * 0.15 + c * 7.5)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/inference/pricing",
+      "source_model": "mistral-vibe-cli-latest",
+      "notes": "Alias identity confirmed by configured official Mistral /v1/models catalog on 2026-10-13; standard USD tariff. Tool invocation charges are separate."
+    },
+    "mistral-vibe-cli-with-tools": {
+      "expression": "tier(\"standard\", p * 1.5 + cr * 0.15 + c * 7.5)",
+      "unit": "token",
+      "source_url": "https://docs.mistral.ai/inference/pricing",
+      "source_model": "mistral-vibe-cli-with-tools",
+      "notes": "Alias identity confirmed by configured official Mistral /v1/models catalog on 2026-10-13; standard USD tariff. Tool invocation charges are separate."
+    },
+    "mistralai/Mistral-Large-Instruct-2407": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "mistralai/Mistral-Large-Instruct-2407",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "nemotron-3-nano:30b": {
+      "expression": "tier(\"cloud\", p * 0.06 + c * 0.24)",
+      "unit": "token",
+      "source_url": "https://ollama.com/pricing",
+      "source_model": "nemotron-3-nano:30b",
+      "notes": "Ollama Cloud pay-as-you-go prices per million tokens, not local inference or a zero-token subscription assumption. Exact size suffixes correspond to the registered cloud models."
+    },
+    "nemotron-3-super": {
+      "expression": "tier(\"cloud\", p * 0.015 + c * 0.6 + cr * 0.015)",
+      "unit": "token",
+      "source_url": "https://ollama.com/pricing",
+      "source_model": "nemotron-3-super",
+      "notes": "Ollama Cloud pay-as-you-go prices per million tokens, not local inference or a zero-token subscription assumption. Exact size suffixes correspond to the registered cloud models."
+    },
+    "nemotron-3-ultra": {
+      "expression": "tier(\"cloud\", p * 0.1 + c * 3 + cr * 0.1)",
+      "unit": "token",
+      "source_url": "https://ollama.com/pricing",
+      "source_model": "nemotron-3-ultra",
+      "notes": "Ollama Cloud pay-as-you-go prices per million tokens, not local inference or a zero-token subscription assumption. Exact size suffixes correspond to the registered cloud models."
+    },
+    "opencompass/CompassJudger-1-32B-Instruct": {
+      "expression": "tier(\"free_inference\", p * 0 + c * 0)",
+      "unit": "token",
+      "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+      "source_model": "opencompass/CompassJudger-1-32B-Instruct",
+      "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
+    },
+    "qwen-deep-research-2025-12-15": {
+      "expression": "tier(\"beijing_1\", p * 11.65191740413 + c * 34.808259587021)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-deep-research-2025-12-15",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen-flash-character": {
+      "expression": "tier(\"beijing_1\", p * 0.036873156342 + c * 0.221238938053 + cr * 0.007374631268)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-flash-character",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen-flash-character-2026-02-26": {
+      "expression": "tier(\"beijing_1\", p * 0.026548672566 + c * 0.221238938053)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-flash-character-2026-02-26",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen-image-2.0-2026-03-03": {
+      "expression": "tier(\"beijing\", u(\"image_count\") * 0.029498525074)",
+      "unit": "task_usage",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-image-2.0-2026-03-03",
+      "notes": "Per generated image, measured by the alibaba plugin; CNY / 6.78."
+    },
+    "qwen-image-2.0-pro-2026-03-03": {
+      "expression": "tier(\"beijing\", u(\"image_count\") * 0.073746312684)",
+      "unit": "task_usage",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-image-2.0-pro-2026-03-03",
+      "notes": "Per generated image, measured by the alibaba plugin; CNY / 6.78."
+    },
+    "qwen-image-2.0-pro-2026-04-22": {
+      "expression": "tier(\"beijing\", u(\"image_count\") * 0.073746312684)",
+      "unit": "task_usage",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-image-2.0-pro-2026-04-22",
+      "notes": "Per generated image, measured by the alibaba plugin; CNY / 6.78."
+    },
+    "qwen-image-2.0-pro-2026-06-22": {
+      "expression": "tier(\"beijing\", u(\"image_count\") * 0.073746312684)",
+      "unit": "task_usage",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-image-2.0-pro-2026-06-22",
+      "notes": "Per generated image, measured by the alibaba plugin; CNY / 6.78."
+    },
+    "qwen-image-3.0": {
+      "expression": "tier(\"beijing\", u(\"image_count\") * 0.026548672566 + u(\"input_image_count\") * 0.002949852507)",
+      "unit": "task_usage",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-image-3.0",
+      "notes": "Qwen-Image-3 output resolution and input image counts; CNY / 6.78."
+    },
+    "qwen-image-3.0-pro": {
+      "expression": "tier(\"beijing\", (u(\"output_image_type\") == \"qima_output_2k\" ? u(\"image_count\") * 0.073746312684 : u(\"image_count\") * 0.036873156342) + u(\"input_image_count\") * 0.002949852507)",
+      "unit": "task_usage",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-image-3.0-pro",
+      "notes": "Qwen-Image-3 output resolution and input image counts; CNY / 6.78."
+    },
+    "qwen-mt-flash": {
+      "expression": "tier(\"beijing_1\", p * 0.103244837758 + c * 0.287610619469)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-mt-flash",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen-mt-lite": {
+      "expression": "tier(\"beijing_1\", p * 0.088495575221 + c * 0.23598820059)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-mt-lite",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen-plus-2025-01-25": {
+      "expression": "tier(\"beijing_1\", p * 0.117994100295 + c * 0.294985250737)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-plus-2025-01-25",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen-vl-ocr-2025-11-20": {
+      "expression": "tier(\"beijing_1\", p * 0.044247787611 + c * 0.073746312684)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen-vl-ocr-2025-11-20",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.5-flash-2026-02-23": {
+      "expression": "len <= 128000 ? tier(\"beijing_1\", p * 0.029498525074 + c * 0.294985250737) : len <= 256000 ? tier(\"beijing_2\", p * 0.117994100295 + c * 1.17994100295) : tier(\"beijing_3\", p * 0.176991150442 + c * 1.769911504425)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.5-flash-2026-02-23",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.5-ocr": {
+      "expression": "tier(\"beijing_1\", p * 0.073746312684 + c * 0.294985250737)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.5-ocr",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.5-omni-flash-2026-03-15": {
+      "expression": "tier(\"beijing\", p * 0.324483775811 + ai * 2.654867256637 + c * (ao > 0 ? 0 : 1.961651917404) + ao * 10.619469026549)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.5-omni-flash-2026-03-15",
+      "notes": "Beijing multimodal rates; output text is free when audio output is present if the official table specifies audio-only output billing. CNY / 6.78."
+    },
+    "qwen3.5-omni-flash-realtime": {
+      "expression": "tier(\"beijing\", p * 0.486725663717 + ai * 3.982300884956 + c * (ao > 0 ? 0 : 2.949852507375) + ao * 15.781710914454)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.5-omni-flash-realtime",
+      "notes": "Beijing multimodal rates; output text is free when audio output is present if the official table specifies audio-only output billing. CNY / 6.78."
+    },
+    "qwen3.5-omni-flash-realtime-2026-03-15": {
+      "expression": "tier(\"beijing\", p * 0.486725663717 + ai * 3.982300884956 + c * (ao > 0 ? 0 : 2.949852507375) + ao * 15.781710914454)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.5-omni-flash-realtime-2026-03-15",
+      "notes": "Beijing multimodal rates; output text is free when audio output is present if the official table specifies audio-only output billing. CNY / 6.78."
+    },
+    "qwen3.5-omni-plus-2026-03-15": {
+      "expression": "tier(\"beijing\", p * 1.032448377581 + ai * 7.817109144543 + c * (ao > 0 ? 0 : 5.899705014749) + ao * 31.41592920354)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.5-omni-plus-2026-03-15",
+      "notes": "Beijing multimodal rates; output text is free when audio output is present if the official table specifies audio-only output billing. CNY / 6.78."
+    },
+    "qwen3.5-omni-plus-realtime": {
+      "expression": "tier(\"beijing\", p * 1.474926253687 + ai * 11.799410029499 + c * (ao > 0 ? 0 : 8.849557522124) + ao * 44.247787610619)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.5-omni-plus-realtime",
+      "notes": "Beijing multimodal rates; output text is free when audio output is present if the official table specifies audio-only output billing. CNY / 6.78."
+    },
+    "qwen3.5-omni-plus-realtime-2026-03-15": {
+      "expression": "tier(\"beijing\", p * 1.474926253687 + ai * 11.799410029499 + c * (ao > 0 ? 0 : 8.849557522124) + ao * 44.247787610619)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.5-omni-plus-realtime-2026-03-15",
+      "notes": "Beijing multimodal rates; output text is free when audio output is present if the official table specifies audio-only output billing. CNY / 6.78."
+    },
+    "qwen3.5-plus-2026-02-15": {
+      "expression": "len <= 128000 ? tier(\"beijing_1\", p * 0.117994100295 + c * 0.70796460177) : len <= 256000 ? tier(\"beijing_2\", p * 0.294985250737 + c * 1.769911504425) : tier(\"beijing_3\", p * 0.589970501475 + c * 3.53982300885)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.5-plus-2026-02-15",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.6-flash-2026-04-16": {
+      "expression": "len <= 256000 ? tier(\"beijing_1\", p * 0.176991150442 + c * 1.061946902655) : tier(\"beijing_2\", p * 0.70796460177 + c * 4.247787610619)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.6-flash-2026-04-16",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.6-plus-2026-04-02": {
+      "expression": "len <= 256000 ? tier(\"beijing_1\", p * 0.294985250737 + c * 1.769911504425) : tier(\"beijing_2\", p * 1.17994100295 + c * 7.079646017699)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.6-plus-2026-04-02",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.7-flash-2026-07-15": {
+      "expression": "len <= 32000 ? tier(\"beijing_1\", p * 0.029498525074 + c * 0.117994100295 + cr * (has(param(\"messages.#.content.#.cache_control.type\"), \"ephemeral\") ? 0.002949852507 : 0.005899705015) + cc * 0.036873156342) : len <= 256000 ? tier(\"beijing_2\", p * 0.088495575221 + c * 0.353982300885 + cr * (has(param(\"messages.#.content.#.cache_control.type\"), \"ephemeral\") ? 0.008849557522 : 0.017699115044) + cc * 0.110619469027) : tier(\"beijing_3\", p * 0.176991150442 + c * 0.70796460177 + cr * (has(param(\"messages.#.content.#.cache_control.type\"), \"ephemeral\") ? 0.017699115044 : 0.035398230088) + cc * 0.221238938053)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.7-flash-2026-07-15",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.7-max-2026-05-17": {
+      "expression": "tier(\"beijing_1\", p * 1.769911504425 + c * 5.309734513274)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.7-max-2026-05-17",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.7-max-2026-05-20": {
+      "expression": "tier(\"beijing_1\", p * 1.769911504425 + c * 5.309734513274 + cr * (has(param(\"messages.#.content.#.cache_control.type\"), \"ephemeral\") ? 0.176991150442 : 0.353982300885) + cc * 2.212389380531)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.7-max-2026-05-20",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.7-max-2026-06-08": {
+      "expression": "tier(\"beijing_1\", p * 1.769911504425 + c * 5.309734513274 + cr * (has(param(\"messages.#.content.#.cache_control.type\"), \"ephemeral\") ? 0.176991150442 : 0.353982300885) + cc * 2.212389380531)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.7-max-2026-06-08",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.7-max-preview": {
+      "expression": "tier(\"beijing_1\", p * 1.769911504425 + c * 5.309734513274)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.7-max-preview",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.7-plus-2026-05-26": {
+      "expression": "len <= 256000 ? tier(\"beijing_1\", p * 0.294985250737 + c * 1.17994100295 + cr * (has(param(\"messages.#.content.#.cache_control.type\"), \"ephemeral\") ? 0.029498525074 : 0.058997050147) + cc * 0.368731563422) : tier(\"beijing_2\", p * 0.884955752212 + c * 3.53982300885 + cr * (has(param(\"messages.#.content.#.cache_control.type\"), \"ephemeral\") ? 0.088495575221 : 0.176991150442) + cc * 1.106194690265)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.7-plus-2026-05-26",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "qwen3.7-text-embedding": {
+      "expression": "tier(\"beijing\", p * 0.073746312684)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.7-text-embedding",
+      "notes": "Input-only token billing. Beijing region; CNY per million tokens / 6.78."
+    },
+    "qwen3.7-text-embedding-flash": {
+      "expression": "tier(\"beijing\", p * 0.018436578171)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.7-text-embedding-flash",
+      "notes": "Input-only token billing. Beijing region; CNY per million tokens / 6.78."
+    },
+    "qwen3.7-text-rerank": {
+      "expression": "tier(\"beijing\", p * 0.073746312684)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.7-text-rerank",
+      "notes": "Input-only token billing. Beijing region; CNY per million tokens / 6.78."
+    },
+    "qwen3.8-max": {
+      "expression": "tier(\"upstream\", p * 12 + c * 36)",
+      "unit": "token",
+      "source_url": "https://fastapi.aabao.top/api/ratio_config",
+      "source_model": "qwen3.8-max",
+      "notes": "Exact upstream alias tariff published in its ratio configuration; quota_per_unit=500000 confirmed using the public status endpoint. Existing local administrator overrides are preserved."
+    },
+    "qwen3.8-omni-flash-realtime": {
+      "expression": "tier(\"beijing\", p * 0.221238938053 + ai * 0.884955752212 + c * 0.663716814159 + ao * 1.769911504425)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "qwen3.8-omni-flash-realtime",
+      "notes": "Beijing multimodal rates; output text is free when audio output is present if the official table specifies audio-only output billing. CNY / 6.78."
+    },
+    "tongyi-xiaomi-analysis-flash": {
+      "expression": "tier(\"beijing_1\", p * 0.029498525074 + c * 0.058997050147 + cr * 0.005899705015)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "tongyi-xiaomi-analysis-flash",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "tongyi-xiaomi-analysis-pro": {
+      "expression": "tier(\"beijing_1\", p * 0.147492625369 + c * 0.398230088496 + cr * 0.029498525074)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "tongyi-xiaomi-analysis-pro",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "vanchin/deepseek-v3": {
+      "expression": "tier(\"beijing_1\", p * 0.294985250737 + c * 1.17994100295 + cr * 0.117994100295)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "vanchin/deepseek-v3",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "vanchin/deepseek-v3.2-think": {
+      "expression": "tier(\"beijing_1\", p * 0.294985250737 + c * 0.442477876106 + cr * 0.029498525074)",
+      "unit": "token",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "vanchin/deepseek-v3.2-think",
+      "notes": "Beijing region, public list prices, CNY converted at the gateway configured USDExchangeRate=6.78; existing administrator prices are preserved. Cache reference: https://help.aliyun.com/zh/model-studio/context-cache"
+    },
+    "z-image-turbo": {
+      "expression": "u(\"prompt_extend\") == true ? tier(\"rewrite\", u(\"image_count\") * 0.029498525074) : tier(\"standard\", u(\"image_count\") * 0.014749262537)",
+      "unit": "task_usage",
+      "source_url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "source_model": "z-image-turbo",
+      "notes": "Prompt rewrite on/off tiers; CNY / 6.78."
+    }
+  }
 }

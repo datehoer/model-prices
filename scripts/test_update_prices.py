@@ -47,9 +47,8 @@ class PriceContracts(unittest.TestCase):
     def test_optional_cache_price_can_start_in_a_context_tier(self):
         pricing = {"prompt": "0.000001", "completion": "0.000002",
                    "overrides": [{"min_prompt_tokens": 100000, "input_cache_read": "0.0000001"}]}
-        self.assertEqual(expression(pricing),
-                         'len < 100000 ? tier("standard", p * 1 + c * 2) : '
-                         'tier("context_100000", p * 1 + c * 2 + cr * 0.1)')
+        with self.assertRaises(ValueError):
+            expression(pricing)
 
     def test_opaque_claude_alias_requires_complete_cache_prices(self):
         with self.assertRaises(ValueError):
@@ -57,7 +56,7 @@ class PriceContracts(unittest.TestCase):
                      {"anthropic/claude-opus-5": {"pricing": {"prompt": "0", "completion": "0"}}})
 
     def test_time_or_mixed_condition_overrides_are_not_flattened(self):
-        for override in [{"utc_days": ["saturday"], "prompt": "0"},
+        for override in [{"utc_days": ["unknown"], "prompt": "0"},
                          {"min_prompt_tokens": 100000, "utc_start": 100}]:
             with self.subTest(override=override), self.assertRaises(ValueError):
                 expression({**PRICE, "overrides": [override]})
@@ -67,8 +66,33 @@ class PriceContracts(unittest.TestCase):
                    "input_cache_read": "0.0000001", "input_audio_cache": "0.0000001",
                    "overrides": [{"min_prompt_tokens": 200000, "prompt": "0.000004", "audio": "0.000004"}]}
         self.assertIn('tier("context_200000", p * 4 + c * 10 + cr * 0.1)', expression(pricing))
-        with self.assertRaises(ValueError):
-            expression({**pricing, "audio": "0.000003"})
+        self.assertIn("ai * 3", expression({**pricing, "audio": "0.000003"}))
+
+    def test_utc_schedule_and_distinct_audio_cache_are_preserved(self):
+        pricing = {"prompt": "0.000002", "completion": "0.00001", "input_cache_read": "0.0000001",
+                   "audio": "0.000005", "input_audio_cache": "0.0000005",
+                   "overrides": [{"utc_days": ["saturday", "sunday"], "prompt": "0.000001"},
+                                 {"utc_start": 2300, "utc_end": 100, "completion": "0.000005"}]}
+        result = expression(pricing)
+        self.assertIn('(weekday("UTC") == 0 || weekday("UTC") == 6)', result)
+        self.assertIn('>= 2300 ||', result)
+        self.assertIn('ai * 5 + ai_cr * 0.5', result)
+        self.assertTrue(result.endswith('tier("standard", p * 2 + c * 10 + cr * 0.1 + ai * 5 + ai_cr * 0.5)'))
+        for override in [{"utc_start": 2360, "utc_end": 100}, {"utc_start": 100}, {"utc_days": ["sunday", "sunday"]}]:
+            with self.subTest(override=override), self.assertRaises(ValueError):
+                expression({**PRICE, "overrides": [override]})
+
+    def test_manual_contract_requires_provenance_and_valid_unit(self):
+        contract = {"expression": 'tier("standard", p * 2 + c * 10)', "unit": "token",
+                    "source_url": "https://example.org/pricing"}
+        result = generate({"models": {"native": "provider/model"}, "contracts": {"manual": contract}},
+                          {"provider/model": {"pricing": PRICE}})
+        self.assertEqual(result["schema_version"], 2)
+        self.assertEqual(result["source_metadata"]["manual"]["source"], "official_manual")
+        for patch in [{"source_url": "http://example.org"}, {"source_url": "https://user:pass@example.org"}, {"unit": "unknown"}]:
+            with self.subTest(patch=patch), self.assertRaises(ValueError):
+                generate({"models": {"native": "provider/model"}, "contracts": {"manual": {**contract, **patch}}},
+                         {"provider/model": {"pricing": PRICE}})
 
 
 if __name__ == "__main__":
