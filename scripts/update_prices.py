@@ -8,12 +8,36 @@ import urllib.request
 
 FIELDS = (("prompt", "p"), ("completion", "c"), ("input_cache_read", "cr"),
           ("input_cache_write", "cc"), ("input_cache_write_1h", "cc1h"))
+SHARED_INPUT_FIELDS = {"audio": "prompt", "input_audio_cache": "input_cache_read"}
 
 
-def expression(pricing):
-    base = {field: pricing[field] for field, _ in FIELDS}
-    overrides = sorted(pricing.get("overrides", []), key=lambda item: item["min_prompt_tokens"])
+def expression(pricing, model_id=""):
+    required = {"prompt", "completion"}
+    if "claude" in model_id.lower():
+        required.update(field for field, _ in FIELDS)
+    for field in required:
+        if field not in pricing or pricing[field] == "":
+            raise ValueError(f"missing required price: {field}")
+    base = {field: pricing[field] for field, _ in FIELDS
+            if field in pricing and pricing[field] != ""}
+    overrides = pricing.get("overrides", [])
+    supported = {field for field, _ in FIELDS} | set(SHARED_INPUT_FIELDS) | {"min_prompt_tokens"}
+    for item in overrides:
+        if "min_prompt_tokens" not in item or set(item) - supported:
+            raise ValueError("unsupported pricing override; only context thresholds are supported")
+    overrides = sorted(overrides, key=lambda item: item["min_prompt_tokens"])
     prices, thresholds = [base], []
+    effective = dict(pricing)
+    for tier in [pricing, *overrides]:
+        effective.update(tier)
+        for auxiliary, token_field in SHARED_INPUT_FIELDS.items():
+            if auxiliary in effective:
+                try:
+                    shared = Decimal(str(effective[auxiliary])) == Decimal(str(effective[token_field]))
+                except (InvalidOperation, KeyError):
+                    shared = False
+                if not shared:
+                    raise ValueError("separate audio input pricing is not supported")
     for item in overrides:
         threshold = item["min_prompt_tokens"]
         if type(threshold) is not int or threshold <= 0 or threshold > 2147483647:
@@ -21,11 +45,14 @@ def expression(pricing):
         if thresholds and threshold <= thresholds[-1]:
             raise ValueError("duplicate context threshold")
         thresholds.append(threshold)
-        prices.append({**prices[-1], **{field: item[field] for field, _ in FIELDS if field in item}})
+        prices.append({**prices[-1], **{field: item[field] for field, _ in FIELDS
+                                      if field in item and item[field] != ""}})
     leaves = []
     for index, price in enumerate(prices):
         terms = []
         for field, variable in FIELDS:
+            if field not in price:
+                continue
             try:
                 value = Decimal(str(price[field]))
             except InvalidOperation as error:
@@ -55,7 +82,8 @@ def generate(sources, catalog):
         if not isinstance(source, str) or "/" not in source or source.strip() != source:
             raise ValueError("invalid OpenRouter model ID")
         price = overrides[local] if local in overrides else catalog[source]["pricing"]
-        expressions[local] = expression(price)
+        # Claude cache categories are mandatory even for an opaque local alias.
+        expressions[local] = expression(price, local + " " + source)
         metadata[local] = {"source": "manual" if local in overrides else "openrouter",
                            "source_model": source, "pricing": price}
     unknown = set(overrides) - set(sources["models"])

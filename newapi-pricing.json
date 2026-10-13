@@ -1,21 +1,272 @@
 {
   "schema_version": 1,
   "success": true,
-  "generated_at": "2026-10-12T14:31:21.883051+00:00",
+  "generated_at": "2026-10-13T03:56:17.701231+00:00",
   "units": "USD per million tokens in expressions; source prices are USD per token",
   "data": {
     "billing_mode": {
+      "MiniMax/MiniMax-M2.1": "tiered_expr",
+      "MiniMax/MiniMax-M2.5": "tiered_expr",
+      "MiniMax/MiniMax-M3": "tiered_expr",
+      "Qwen/Qwen3.8-27B": "tiered_expr",
+      "ZHIPU/GLM-5": "tiered_expr",
+      "ZHIPU/GLM-5.1": "tiered_expr",
+      "ZHIPU/GLM-5.2": "tiered_expr",
+      "ZHIPU/GLM-5.3": "tiered_expr",
+      "ZHIPU/GLM-5.3-Flash": "tiered_expr",
+      "ZHIPU/GLM-5.3-FlashX": "tiered_expr",
+      "ZhipuAI/GLM-4.7-Flash": "tiered_expr",
+      "ZhipuAI/GLM-5.2": "tiered_expr",
+      "claude-fable-5-1": "tiered_expr",
       "claude-haiku-5-5": "tiered_expr",
+      "claude-opus-5": "tiered_expr",
       "claude-opus-5-5": "tiered_expr",
-      "claude-sonnet-5-5": "tiered_expr"
+      "claude-sonnet-5": "tiered_expr",
+      "claude-sonnet-5-5": "tiered_expr",
+      "deepseek-ai/DeepSeek-V4-Flash-0731": "tiered_expr",
+      "deepseek-v4-flash-0731": "tiered_expr",
+      "gemini-3.5-flash-lite": "tiered_expr",
+      "gemini-3.6-flash": "tiered_expr",
+      "gemini-3.7-flash": "tiered_expr",
+      "glm-5.2": "tiered_expr",
+      "glm-5.3": "tiered_expr",
+      "glm-5.3-flash": "tiered_expr",
+      "glm-5.3-prime": "tiered_expr",
+      "gpt-5.6-luna": "tiered_expr",
+      "gpt-5.6-sol": "tiered_expr",
+      "gpt-5.6-terra": "tiered_expr",
+      "gpt-6-luna": "tiered_expr",
+      "gpt-6-sol": "tiered_expr",
+      "gpt-6.1-sol": "tiered_expr",
+      "gpt-oss:120b": "tiered_expr",
+      "gpt-oss:20b": "tiered_expr",
+      "grok-4.20-multi-agent": "tiered_expr",
+      "grok-4.5": "tiered_expr",
+      "grok-4.6": "tiered_expr",
+      "kimi-k2.7-code": "tiered_expr",
+      "kimi-k3": "tiered_expr",
+      "kimi/kimi-k2.7-code": "tiered_expr",
+      "kimi/kimi-k3": "tiered_expr",
+      "mistral-medium-3": "tiered_expr",
+      "mistral-medium-3-5": "tiered_expr",
+      "mistral-medium-3.5": "tiered_expr",
+      "models/gemini-2.5-pro": "tiered_expr",
+      "models/gemini-3.1-pro-preview": "tiered_expr",
+      "models/gemini-3.1-pro-preview-customtools": "tiered_expr",
+      "models/gemini-3.5-flash-lite": "tiered_expr",
+      "models/gemini-3.6-flash": "tiered_expr",
+      "models/gemini-3.7-flash": "tiered_expr",
+      "models/gemini-3.8-flash": "tiered_expr",
+      "models/gemini-flash-latest": "tiered_expr",
+      "models/gemini-pro-latest": "tiered_expr",
+      "models/gemma-4-26b-a4b-it": "tiered_expr",
+      "models/gemma-4-31b-it": "tiered_expr",
+      "nex-agi/Nex-N2.5-Pro": "tiered_expr",
+      "nex-agi/Nex-N2.5-mini": "tiered_expr",
+      "qwen3.5-plus-2026-04-20": "tiered_expr",
+      "qwen3.7-flash": "tiered_expr",
+      "qwen3.8-2.4t-a95b": "tiered_expr",
+      "qwen3.8-27b": "tiered_expr",
+      "qwen3.8-flash": "tiered_expr",
+      "qwen3.8-max-0902": "tiered_expr",
+      "qwen3.8-omni-flash": "tiered_expr",
+      "stepfun-ai/Step-3.7-Flash": "tiered_expr",
+      "vanchin/deepseek-r1": "tiered_expr",
+      "vanchin/deepseek-v3.1-terminus": "tiered_expr",
+      "vanchin/deepseek-v4-pro": "tiered_expr"
     },
     "billing_expr": {
+      "MiniMax/MiniMax-M2.1": "tier(\"standard\", p * 0.3 + c * 1.2 + cr * 0.03)",
+      "MiniMax/MiniMax-M2.5": "tier(\"standard\", p * 0.27 + c * 1.08 + cr * 0.027)",
+      "MiniMax/MiniMax-M3": "tier(\"standard\", p * 0.3 + c * 1.2 + cr * 0.06)",
+      "Qwen/Qwen3.8-27B": "tier(\"standard\", p * 0.04 + c * 2.3 + cr * 0.0198)",
+      "ZHIPU/GLM-5": "tier(\"standard\", p * 0.6 + c * 1.92 + cr * 0.12)",
+      "ZHIPU/GLM-5.1": "tier(\"standard\", p * 0.966 + c * 3.036 + cr * 0.1794)",
+      "ZHIPU/GLM-5.2": "tier(\"standard\", p * 0.06 + c * 7 + cr * 0.059)",
+      "ZHIPU/GLM-5.3": "tier(\"standard\", p * 0.079 + c * 4.8 + cr * 0.059)",
+      "ZHIPU/GLM-5.3-Flash": "tier(\"standard\", p * 0.0261 + c * 0.9 + cr * 0.0108)",
+      "ZHIPU/GLM-5.3-FlashX": "tier(\"standard\", p * 0.37 + c * 1.25 + cr * 0.09)",
+      "ZhipuAI/GLM-4.7-Flash": "tier(\"standard\", p * 0.0605 + c * 0.4)",
+      "ZhipuAI/GLM-5.2": "tier(\"standard\", p * 0.06 + c * 7 + cr * 0.059)",
+      "claude-fable-5-1": "tier(\"standard\", p * 10 + c * 50 + cr * 0.25 + cc * 12.5 + cc1h * 20)",
       "claude-haiku-5-5": "len < 100000 ? tier(\"standard\", p * 0.1 + c * 0.5 + cr * 0.01 + cc * 0.125 + cc1h * 0.2) : tier(\"context_100000\", p * 0.5 + c * 2.5 + cr * 0.05 + cc * 0.625 + cc1h * 1)",
+      "claude-opus-5": "tier(\"standard\", p * 5 + c * 25 + cr * 0.5 + cc * 6.25 + cc1h * 10)",
       "claude-opus-5-5": "tier(\"standard\", p * 4 + c * 20 + cr * 0.2 + cc * 5 + cc1h * 8)",
-      "claude-sonnet-5-5": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 4)"
+      "claude-sonnet-5": "tier(\"standard\", p * 2 + c * 10 + cr * 0.2 + cc * 2.5 + cc1h * 4)",
+      "claude-sonnet-5-5": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 4)",
+      "deepseek-ai/DeepSeek-V4-Flash-0731": "tier(\"standard\", p * 0.016 + c * 0.64 + cr * 0.016)",
+      "deepseek-v4-flash-0731": "tier(\"standard\", p * 0.016 + c * 0.64 + cr * 0.016)",
+      "gemini-3.5-flash-lite": "tier(\"standard\", p * 0.3 + c * 2.5 + cr * 0.03 + cc * 0.0833333333333333)",
+      "gemini-3.6-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
+      "gemini-3.7-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
+      "glm-5.2": "tier(\"standard\", p * 0.06 + c * 7 + cr * 0.059)",
+      "glm-5.3": "tier(\"standard\", p * 0.079 + c * 4.8 + cr * 0.059)",
+      "glm-5.3-flash": "tier(\"standard\", p * 0.0261 + c * 0.9 + cr * 0.0108)",
+      "glm-5.3-prime": "tier(\"standard\", p * 2.8 + c * 8.8 + cr * 0.56)",
+      "gpt-5.6-luna": "len < 272000 ? tier(\"standard\", p * 0.2 + c * 1.2 + cr * 0.02 + cc * 0.25) : tier(\"context_272000\", p * 0.4 + c * 1.8 + cr * 0.04 + cc * 0.5)",
+      "gpt-5.6-sol": "len < 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.2 + cc * 2.5) : tier(\"context_272000\", p * 4 + c * 15 + cr * 0.4 + cc * 5)",
+      "gpt-5.6-terra": "len < 272000 ? tier(\"standard\", p * 2 + c * 12 + cr * 0.2 + cc * 2.5) : tier(\"context_272000\", p * 4 + c * 18 + cr * 0.4 + cc * 5)",
+      "gpt-6-luna": "len < 272000 ? tier(\"standard\", p * 0.1 + c * 0.5 + cr * 0.01 + cc * 0.125) : tier(\"context_272000\", p * 0.2 + c * 0.75 + cr * 0.02 + cc * 0.25)",
+      "gpt-6-sol": "len < 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.2 + cc * 2.5) : tier(\"context_272000\", p * 4 + c * 15 + cr * 0.4 + cc * 5)",
+      "gpt-6.1-sol": "len < 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5) : tier(\"context_272000\", p * 4 + c * 15 + cr * 0.2 + cc * 5)",
+      "gpt-oss:120b": "tier(\"standard\", p * 0.15 + c * 0.6 + cr * 0.075)",
+      "gpt-oss:20b": "tier(\"standard\", p * 0.018 + c * 0.09 + cr * 0.009)",
+      "grok-4.20-multi-agent": "len < 200000 ? tier(\"standard\", p * 1.25 + c * 2.5 + cr * 0.2) : tier(\"context_200000\", p * 2.5 + c * 5 + cr * 0.4)",
+      "grok-4.5": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.3) : tier(\"context_200000\", p * 4 + c * 12 + cr * 0.6)",
+      "grok-4.6": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
+      "kimi-k2.7-code": "tier(\"standard\", p * 0.6712 + c * 3.35 + cr * 0.18)",
+      "kimi-k3": "tier(\"standard\", p * 0.73 + c * 13.5 + cr * 0.55)",
+      "kimi/kimi-k2.7-code": "tier(\"standard\", p * 0.6712 + c * 3.35 + cr * 0.18)",
+      "kimi/kimi-k3": "tier(\"standard\", p * 0.73 + c * 13.5 + cr * 0.55)",
+      "mistral-medium-3": "tier(\"standard\", p * 0.4 + c * 2 + cr * 0.04)",
+      "mistral-medium-3-5": "tier(\"standard\", p * 1.5 + c * 7.5)",
+      "mistral-medium-3.5": "tier(\"standard\", p * 1.5 + c * 7.5)",
+      "models/gemini-2.5-pro": "len < 200000 ? tier(\"standard\", p * 1.25 + c * 10 + cr * 0.125 + cc * 0.375) : tier(\"context_200000\", p * 2.5 + c * 15 + cr * 0.25 + cc * 0.375)",
+      "models/gemini-3.1-pro-preview": "len < 200000 ? tier(\"standard\", p * 2 + c * 12 + cr * 0.2 + cc * 0.375) : tier(\"context_200000\", p * 4 + c * 18 + cr * 0.4 + cc * 0.375)",
+      "models/gemini-3.1-pro-preview-customtools": "len < 200000 ? tier(\"standard\", p * 2 + c * 12 + cr * 0.2 + cc * 0.375) : tier(\"context_200000\", p * 4 + c * 18 + cr * 0.4 + cc * 0.375)",
+      "models/gemini-3.5-flash-lite": "tier(\"standard\", p * 0.3 + c * 2.5 + cr * 0.03 + cc * 0.0833333333333333)",
+      "models/gemini-3.6-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
+      "models/gemini-3.7-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
+      "models/gemini-3.8-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
+      "models/gemini-flash-latest": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
+      "models/gemini-pro-latest": "len < 200000 ? tier(\"standard\", p * 2 + c * 12 + cr * 0.2 + cc * 0.375) : tier(\"context_200000\", p * 4 + c * 18 + cr * 0.4 + cc * 0.375)",
+      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.0765 + c * 0.255 + cr * 0.0425)",
+      "models/gemma-4-31b-it": "tier(\"standard\", p * 0.09 + c * 0.34 + cr * 0.05)",
+      "nex-agi/Nex-N2.5-Pro": "tier(\"standard\", p * 0.075 + c * 0.25 + cr * 0.015)",
+      "nex-agi/Nex-N2.5-mini": "tier(\"standard\", p * 0.025 + c * 0.1 + cr * 0.0025)",
+      "qwen3.5-plus-2026-04-20": "len < 256000 ? tier(\"standard\", p * 0.3 + c * 1.8 + cc * 0.375) : tier(\"context_256000\", p * 0.375 + c * 2.25 + cc * 0.46875)",
+      "qwen3.7-flash": "len < 32000 ? tier(\"standard\", p * 0.03 + c * 0.13 + cr * 0.006 + cc * 0.038) : len < 256000 ? tier(\"context_32000\", p * 0.1 + c * 0.4 + cr * 0.02 + cc * 0.125) : tier(\"context_256000\", p * 0.2 + c * 0.8 + cr * 0.04 + cc * 0.25)",
+      "qwen3.8-2.4t-a95b": "tier(\"standard\", p * 2 + c * 6 + cr * 0.25)",
+      "qwen3.8-27b": "tier(\"standard\", p * 0.04 + c * 2.3 + cr * 0.0198)",
+      "qwen3.8-flash": "tier(\"standard\", p * 0.15 + c * 0.47 + cr * 0.016)",
+      "qwen3.8-max-0902": "tier(\"standard\", p * 2 + c * 6 + cr * 0.25)",
+      "qwen3.8-omni-flash": "tier(\"standard\", p * 0.15 + c * 0.47 + cr * 0.016)",
+      "stepfun-ai/Step-3.7-Flash": "tier(\"standard\", p * 0.2 + c * 1.15 + cr * 0.04)",
+      "vanchin/deepseek-r1": "tier(\"standard\", p * 0.7 + c * 2.5)",
+      "vanchin/deepseek-v3.1-terminus": "tier(\"standard\", p * 0.27 + c * 1)",
+      "vanchin/deepseek-v4-pro": "tier(\"standard\", p * 0.95526 + c * 1.91052 + cr * 0.079605)"
     }
   },
   "source_metadata": {
+    "MiniMax/MiniMax-M2.1": {
+      "source": "openrouter",
+      "source_model": "minimax/minimax-m2.1",
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.00000003"
+      }
+    },
+    "MiniMax/MiniMax-M2.5": {
+      "source": "openrouter",
+      "source_model": "minimax/minimax-m2.5",
+      "pricing": {
+        "prompt": "0.00000027",
+        "completion": "0.00000108",
+        "input_cache_read": "0.000000027"
+      }
+    },
+    "MiniMax/MiniMax-M3": {
+      "source": "openrouter",
+      "source_model": "minimax/minimax-m3",
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.00000006"
+      }
+    },
+    "Qwen/Qwen3.8-27B": {
+      "source": "openrouter",
+      "source_model": "qwen/qwen3.8-27b",
+      "pricing": {
+        "prompt": "0.00000004",
+        "completion": "0.0000023",
+        "input_cache_read": "0.0000000198"
+      }
+    },
+    "ZHIPU/GLM-5": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5",
+      "pricing": {
+        "prompt": "0.0000006",
+        "completion": "0.00000192",
+        "input_cache_read": "0.00000012"
+      }
+    },
+    "ZHIPU/GLM-5.1": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5.1",
+      "pricing": {
+        "prompt": "0.000000966",
+        "completion": "0.000003036",
+        "input_cache_read": "0.0000001794"
+      }
+    },
+    "ZHIPU/GLM-5.2": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5.2",
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.000007",
+        "input_cache_read": "0.000000059"
+      }
+    },
+    "ZHIPU/GLM-5.3": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5.3",
+      "pricing": {
+        "prompt": "0.000000079",
+        "completion": "0.0000048",
+        "input_cache_read": "0.000000059"
+      }
+    },
+    "ZHIPU/GLM-5.3-Flash": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5.3-flash",
+      "pricing": {
+        "prompt": "0.0000000261",
+        "completion": "0.0000009",
+        "input_cache_read": "0.0000000108"
+      }
+    },
+    "ZHIPU/GLM-5.3-FlashX": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5.3-flashx",
+      "pricing": {
+        "prompt": "0.00000037",
+        "completion": "0.00000125",
+        "input_cache_read": "0.00000009"
+      }
+    },
+    "ZhipuAI/GLM-4.7-Flash": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-4.7-flash",
+      "pricing": {
+        "prompt": "0.0000000605",
+        "completion": "0.0000004"
+      }
+    },
+    "ZhipuAI/GLM-5.2": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5.2",
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.000007",
+        "input_cache_read": "0.000000059"
+      }
+    },
+    "claude-fable-5-1": {
+      "source": "openrouter",
+      "source_model": "anthropic/claude-fable-5.1",
+      "pricing": {
+        "prompt": "0.00001",
+        "completion": "0.00005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000025",
+        "input_cache_write": "0.0000125",
+        "input_cache_write_1h": "0.00002"
+      }
+    },
     "claude-haiku-5-5": {
       "source": "openrouter",
       "source_model": "anthropic/claude-haiku-5.5",
@@ -38,6 +289,18 @@
         ]
       }
     },
+    "claude-opus-5": {
+      "source": "openrouter",
+      "source_model": "anthropic/claude-opus-5",
+      "pricing": {
+        "prompt": "0.000005",
+        "completion": "0.000025",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000005",
+        "input_cache_write": "0.00000625",
+        "input_cache_write_1h": "0.00001"
+      }
+    },
     "claude-opus-5-5": {
       "source": "openrouter",
       "source_model": "anthropic/claude-opus-5.5",
@@ -50,6 +313,18 @@
         "input_cache_write_1h": "0.000008"
       }
     },
+    "claude-sonnet-5": {
+      "source": "openrouter",
+      "source_model": "anthropic/claude-sonnet-5",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "input_cache_write_1h": "0.000004"
+      }
+    },
     "claude-sonnet-5-5": {
       "source": "openrouter",
       "source_model": "anthropic/claude-sonnet-5.5",
@@ -60,6 +335,691 @@
         "input_cache_read": "0.0000001",
         "input_cache_write": "0.0000025",
         "input_cache_write_1h": "0.000004"
+      }
+    },
+    "deepseek-ai/DeepSeek-V4-Flash-0731": {
+      "source": "openrouter",
+      "source_model": "deepseek/deepseek-v4-flash-0731",
+      "pricing": {
+        "prompt": "0.000000016",
+        "completion": "0.00000064",
+        "input_cache_read": "0.000000016"
+      }
+    },
+    "deepseek-v4-flash-0731": {
+      "source": "openrouter",
+      "source_model": "deepseek/deepseek-v4-flash-0731",
+      "pricing": {
+        "prompt": "0.000000016",
+        "completion": "0.00000064",
+        "input_cache_read": "0.000000016"
+      }
+    },
+    "gemini-3.5-flash-lite": {
+      "source": "openrouter",
+      "source_model": "google/gemini-3.5-flash-lite",
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000025",
+        "image": "0.0000003",
+        "audio": "0.0000003",
+        "input_audio_cache": "0.00000003",
+        "web_search": "0.014",
+        "internal_reasoning": "0.0000025",
+        "input_cache_read": "0.00000003",
+        "input_cache_write": "0.0000000833333333333333"
+      }
+    },
+    "gemini-3.6-flash": {
+      "source": "openrouter",
+      "source_model": "google/gemini-3.6-flash",
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.00000375",
+        "image": "0.00000075",
+        "audio": "0.00000075",
+        "input_audio_cache": "0.000000075",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00000375",
+        "input_cache_read": "0.000000075",
+        "input_cache_write": "0.0000000416666666666667"
+      }
+    },
+    "gemini-3.7-flash": {
+      "source": "openrouter",
+      "source_model": "google/gemini-3.7-flash",
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.00000375",
+        "image": "0.00000075",
+        "audio": "0.00000075",
+        "input_audio_cache": "0.000000075",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00000375",
+        "input_cache_read": "0.000000075",
+        "input_cache_write": "0.0000000416666666666667"
+      }
+    },
+    "glm-5.2": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5.2",
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.000007",
+        "input_cache_read": "0.000000059"
+      }
+    },
+    "glm-5.3": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5.3",
+      "pricing": {
+        "prompt": "0.000000079",
+        "completion": "0.0000048",
+        "input_cache_read": "0.000000059"
+      }
+    },
+    "glm-5.3-flash": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5.3-flash",
+      "pricing": {
+        "prompt": "0.0000000261",
+        "completion": "0.0000009",
+        "input_cache_read": "0.0000000108"
+      }
+    },
+    "glm-5.3-prime": {
+      "source": "openrouter",
+      "source_model": "z-ai/glm-5.3-prime",
+      "pricing": {
+        "prompt": "0.0000028",
+        "completion": "0.0000088",
+        "input_cache_read": "0.00000056"
+      }
+    },
+    "gpt-5.6-luna": {
+      "source": "openrouter",
+      "source_model": "openai/gpt-5.6-luna",
+      "pricing": {
+        "prompt": "0.0000002",
+        "completion": "0.0000012",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000002",
+        "input_cache_write": "0.00000025",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.0000004",
+            "completion": "0.0000018",
+            "input_cache_read": "0.00000004",
+            "input_cache_write": "0.0000005"
+          }
+        ]
+      }
+    },
+    "gpt-5.6-sol": {
+      "source": "openrouter",
+      "source_model": "openai/gpt-5.6-sol",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.000004",
+            "completion": "0.000015",
+            "input_cache_read": "0.0000004",
+            "input_cache_write": "0.000005"
+          }
+        ]
+      }
+    },
+    "gpt-5.6-terra": {
+      "source": "openrouter",
+      "source_model": "openai/gpt-5.6-terra",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000012",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.000004",
+            "completion": "0.000018",
+            "input_cache_read": "0.0000004",
+            "input_cache_write": "0.000005"
+          }
+        ]
+      }
+    },
+    "gpt-6-luna": {
+      "source": "openrouter",
+      "source_model": "openai/gpt-6-luna",
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.000000125",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.0000002",
+            "completion": "0.00000075",
+            "input_cache_read": "0.00000002",
+            "input_cache_write": "0.00000025"
+          }
+        ]
+      }
+    },
+    "gpt-6-sol": {
+      "source": "openrouter",
+      "source_model": "openai/gpt-6-sol",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.000004",
+            "completion": "0.000015",
+            "input_cache_read": "0.0000004",
+            "input_cache_write": "0.000005"
+          }
+        ]
+      }
+    },
+    "gpt-6.1-sol": {
+      "source": "openrouter",
+      "source_model": "openai/gpt-6.1-sol",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000025",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.000004",
+            "completion": "0.000015",
+            "input_cache_read": "0.0000002",
+            "input_cache_write": "0.000005"
+          }
+        ]
+      }
+    },
+    "gpt-oss:120b": {
+      "source": "openrouter",
+      "source_model": "openai/gpt-oss-120b",
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000075"
+      }
+    },
+    "gpt-oss:20b": {
+      "source": "openrouter",
+      "source_model": "openai/gpt-oss-20b",
+      "pricing": {
+        "prompt": "0.000000018",
+        "completion": "0.00000009",
+        "input_cache_read": "0.000000009"
+      }
+    },
+    "grok-4.20-multi-agent": {
+      "source": "openrouter",
+      "source_model": "x-ai/grok-4.20-multi-agent",
+      "pricing": {
+        "prompt": "0.00000125",
+        "completion": "0.0000025",
+        "web_search": "0.005",
+        "input_cache_read": "0.0000002",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.0000025",
+            "completion": "0.000005",
+            "input_cache_read": "0.0000004"
+          }
+        ]
+      }
+    },
+    "grok-4.5": {
+      "source": "openrouter",
+      "source_model": "x-ai/grok-4.5",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "web_search": "0.005",
+        "input_cache_read": "0.0000003",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.000004",
+            "completion": "0.000012",
+            "input_cache_read": "0.0000006"
+          }
+        ]
+      }
+    },
+    "grok-4.6": {
+      "source": "openrouter",
+      "source_model": "x-ai/grok-4.6",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "web_search": "0.005",
+        "input_cache_read": "0.0000005",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.000004",
+            "completion": "0.000012",
+            "input_cache_read": "0.000001"
+          }
+        ]
+      }
+    },
+    "kimi-k2.7-code": {
+      "source": "openrouter",
+      "source_model": "moonshotai/kimi-k2.7-code",
+      "pricing": {
+        "prompt": "0.0000006712",
+        "completion": "0.00000335",
+        "input_cache_read": "0.00000018"
+      }
+    },
+    "kimi-k3": {
+      "source": "openrouter",
+      "source_model": "moonshotai/kimi-k3",
+      "pricing": {
+        "prompt": "0.00000073",
+        "completion": "0.0000135",
+        "input_cache_read": "0.00000055"
+      }
+    },
+    "kimi/kimi-k2.7-code": {
+      "source": "openrouter",
+      "source_model": "moonshotai/kimi-k2.7-code",
+      "pricing": {
+        "prompt": "0.0000006712",
+        "completion": "0.00000335",
+        "input_cache_read": "0.00000018"
+      }
+    },
+    "kimi/kimi-k3": {
+      "source": "openrouter",
+      "source_model": "moonshotai/kimi-k3",
+      "pricing": {
+        "prompt": "0.00000073",
+        "completion": "0.0000135",
+        "input_cache_read": "0.00000055"
+      }
+    },
+    "mistral-medium-3": {
+      "source": "openrouter",
+      "source_model": "mistralai/mistral-medium-3",
+      "pricing": {
+        "prompt": "0.0000004",
+        "completion": "0.000002",
+        "input_cache_read": "0.00000004"
+      }
+    },
+    "mistral-medium-3-5": {
+      "source": "openrouter",
+      "source_model": "mistralai/mistral-medium-3-5",
+      "pricing": {
+        "prompt": "0.0000015",
+        "completion": "0.0000075"
+      }
+    },
+    "mistral-medium-3.5": {
+      "source": "openrouter",
+      "source_model": "mistralai/mistral-medium-3-5",
+      "pricing": {
+        "prompt": "0.0000015",
+        "completion": "0.0000075"
+      }
+    },
+    "models/gemini-2.5-pro": {
+      "source": "openrouter",
+      "source_model": "google/gemini-2.5-pro",
+      "pricing": {
+        "prompt": "0.00000125",
+        "completion": "0.00001",
+        "image": "0.00000125",
+        "audio": "0.00000125",
+        "input_audio_cache": "0.000000125",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00001",
+        "input_cache_read": "0.000000125",
+        "input_cache_write": "0.000000375",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.0000025",
+            "completion": "0.000015",
+            "audio": "0.0000025",
+            "input_audio_cache": "0.00000025",
+            "input_cache_read": "0.00000025"
+          }
+        ]
+      }
+    },
+    "models/gemini-3.1-pro-preview": {
+      "source": "openrouter",
+      "source_model": "google/gemini-3.1-pro-preview",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000012",
+        "image": "0.000002",
+        "audio": "0.000002",
+        "input_audio_cache": "0.0000002",
+        "web_search": "0.014",
+        "internal_reasoning": "0.000012",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.000000375",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.000004",
+            "completion": "0.000018",
+            "audio": "0.000004",
+            "input_audio_cache": "0.0000004",
+            "input_cache_read": "0.0000004"
+          }
+        ]
+      }
+    },
+    "models/gemini-3.1-pro-preview-customtools": {
+      "source": "openrouter",
+      "source_model": "google/gemini-3.1-pro-preview-customtools",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000012",
+        "image": "0.000002",
+        "audio": "0.000002",
+        "input_audio_cache": "0.0000002",
+        "web_search": "0.014",
+        "internal_reasoning": "0.000012",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.000000375",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.000004",
+            "completion": "0.000018",
+            "audio": "0.000004",
+            "input_audio_cache": "0.0000004",
+            "input_cache_read": "0.0000004"
+          }
+        ]
+      }
+    },
+    "models/gemini-3.5-flash-lite": {
+      "source": "openrouter",
+      "source_model": "google/gemini-3.5-flash-lite",
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000025",
+        "image": "0.0000003",
+        "audio": "0.0000003",
+        "input_audio_cache": "0.00000003",
+        "web_search": "0.014",
+        "internal_reasoning": "0.0000025",
+        "input_cache_read": "0.00000003",
+        "input_cache_write": "0.0000000833333333333333"
+      }
+    },
+    "models/gemini-3.6-flash": {
+      "source": "openrouter",
+      "source_model": "google/gemini-3.6-flash",
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.00000375",
+        "image": "0.00000075",
+        "audio": "0.00000075",
+        "input_audio_cache": "0.000000075",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00000375",
+        "input_cache_read": "0.000000075",
+        "input_cache_write": "0.0000000416666666666667"
+      }
+    },
+    "models/gemini-3.7-flash": {
+      "source": "openrouter",
+      "source_model": "google/gemini-3.7-flash",
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.00000375",
+        "image": "0.00000075",
+        "audio": "0.00000075",
+        "input_audio_cache": "0.000000075",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00000375",
+        "input_cache_read": "0.000000075",
+        "input_cache_write": "0.0000000416666666666667"
+      }
+    },
+    "models/gemini-3.8-flash": {
+      "source": "openrouter",
+      "source_model": "google/gemini-3.8-flash",
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.00000375",
+        "image": "0.00000075",
+        "audio": "0.00000075",
+        "input_audio_cache": "0.000000075",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00000375",
+        "input_cache_read": "0.000000075",
+        "input_cache_write": "0.0000000416666666666667"
+      }
+    },
+    "models/gemini-flash-latest": {
+      "source": "openrouter",
+      "source_model": "~google/gemini-flash-latest",
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.00000375",
+        "image": "0.00000075",
+        "audio": "0.00000075",
+        "input_audio_cache": "0.000000075",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00000375",
+        "input_cache_read": "0.000000075",
+        "input_cache_write": "0.0000000416666666666667"
+      }
+    },
+    "models/gemini-pro-latest": {
+      "source": "openrouter",
+      "source_model": "~google/gemini-pro-latest",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000012",
+        "image": "0.000002",
+        "audio": "0.000002",
+        "input_audio_cache": "0.0000002",
+        "web_search": "0.014",
+        "internal_reasoning": "0.000012",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.000000375",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.000004",
+            "completion": "0.000018",
+            "audio": "0.000004",
+            "input_audio_cache": "0.0000004",
+            "input_cache_read": "0.0000004"
+          }
+        ]
+      }
+    },
+    "models/gemma-4-26b-a4b-it": {
+      "source": "openrouter",
+      "source_model": "google/gemma-4-26b-a4b-it",
+      "pricing": {
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
+      }
+    },
+    "models/gemma-4-31b-it": {
+      "source": "openrouter",
+      "source_model": "google/gemma-4-31b-it",
+      "pricing": {
+        "prompt": "0.00000009",
+        "completion": "0.00000034",
+        "input_cache_read": "0.00000005"
+      }
+    },
+    "nex-agi/Nex-N2.5-Pro": {
+      "source": "openrouter",
+      "source_model": "nex-agi/nex-n2.5-pro",
+      "pricing": {
+        "prompt": "0.000000075",
+        "completion": "0.00000025",
+        "input_cache_read": "0.000000015"
+      }
+    },
+    "nex-agi/Nex-N2.5-mini": {
+      "source": "openrouter",
+      "source_model": "nex-agi/nex-n2.5-mini",
+      "pricing": {
+        "prompt": "0.000000025",
+        "completion": "0.0000001",
+        "input_cache_read": "0.0000000025"
+      }
+    },
+    "qwen3.5-plus-2026-04-20": {
+      "source": "openrouter",
+      "source_model": "qwen/qwen3.5-plus-20260420",
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000018",
+        "input_cache_write": "0.000000375",
+        "overrides": [
+          {
+            "min_prompt_tokens": 256000,
+            "prompt": "0.000000375",
+            "completion": "0.00000225",
+            "input_cache_write": "0.00000046875"
+          }
+        ]
+      }
+    },
+    "qwen3.7-flash": {
+      "source": "openrouter",
+      "source_model": "qwen/qwen3.7-flash",
+      "pricing": {
+        "prompt": "0.00000003",
+        "completion": "0.00000013",
+        "input_cache_read": "0.000000006",
+        "input_cache_write": "0.000000038",
+        "overrides": [
+          {
+            "min_prompt_tokens": 32000,
+            "prompt": "0.0000001",
+            "completion": "0.0000004",
+            "input_cache_read": "0.00000002",
+            "input_cache_write": "0.000000125"
+          },
+          {
+            "min_prompt_tokens": 256000,
+            "prompt": "0.0000002",
+            "completion": "0.0000008",
+            "input_cache_read": "0.00000004",
+            "input_cache_write": "0.00000025"
+          }
+        ]
+      }
+    },
+    "qwen3.8-2.4t-a95b": {
+      "source": "openrouter",
+      "source_model": "qwen/qwen3.8-2.4t-a95b",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "input_cache_read": "0.00000025"
+      }
+    },
+    "qwen3.8-27b": {
+      "source": "openrouter",
+      "source_model": "qwen/qwen3.8-27b",
+      "pricing": {
+        "prompt": "0.00000004",
+        "completion": "0.0000023",
+        "input_cache_read": "0.0000000198"
+      }
+    },
+    "qwen3.8-flash": {
+      "source": "openrouter",
+      "source_model": "qwen/qwen3.8-flash",
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.00000047",
+        "input_cache_read": "0.000000016"
+      }
+    },
+    "qwen3.8-max-0902": {
+      "source": "openrouter",
+      "source_model": "qwen/qwen3.8-max-0902",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "input_cache_read": "0.00000025"
+      }
+    },
+    "qwen3.8-omni-flash": {
+      "source": "openrouter",
+      "source_model": "qwen/qwen3.8-omni-flash",
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.00000047",
+        "input_cache_read": "0.000000016"
+      }
+    },
+    "stepfun-ai/Step-3.7-Flash": {
+      "source": "openrouter",
+      "source_model": "stepfun/step-3.7-flash",
+      "pricing": {
+        "prompt": "0.0000002",
+        "completion": "0.00000115",
+        "input_cache_read": "0.00000004"
+      }
+    },
+    "vanchin/deepseek-r1": {
+      "source": "openrouter",
+      "source_model": "deepseek/deepseek-r1",
+      "pricing": {
+        "prompt": "0.0000007",
+        "completion": "0.0000025"
+      }
+    },
+    "vanchin/deepseek-v3.1-terminus": {
+      "source": "openrouter",
+      "source_model": "deepseek/deepseek-v3.1-terminus",
+      "pricing": {
+        "prompt": "0.00000027",
+        "completion": "0.000001"
+      }
+    },
+    "vanchin/deepseek-v4-pro": {
+      "source": "openrouter",
+      "source_model": "deepseek/deepseek-v4-pro",
+      "pricing": {
+        "prompt": "0.00000095526",
+        "completion": "0.00000191052",
+        "input_cache_read": "0.000000079605"
       }
     }
   }

@@ -3,8 +3,14 @@
 `prices.json` is the existing legacy price list. Its schema and values are preserved.
 
 `newapi-pricing.json` is the complete New API expression catalog. Expression coefficients
-are USD per million tokens, with separate input, output, cache read, 5-minute cache write
-and 1-hour cache write prices. Context tiers use total input length (`len`).
+are USD per million tokens. Input and output prices are required; published cache read
+and write prices are included separately. Claude models require cache read, 5-minute
+cache write and 1-hour cache write prices. Unpublished optional cache categories are
+omitted, never guessed or set to zero. Context tiers use total input length (`len`).
+Time-based and other unsupported override conditions reject generation rather than
+silently publishing the undiscounted or partial price.
+Distinct audio input rates are also deferred; an audio input price identical to its
+text input or cache rate can share the same token term.
 
 Edit `sources.json` to explicitly map local model IDs to OpenRouter IDs. No aliases are
 inferred. Optional `overrides` use the same pricing fields as OpenRouter (USD per token)
