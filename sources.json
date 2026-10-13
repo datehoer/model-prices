@@ -523,6 +523,27 @@
       "source_model": "mistral-moderation-2603",
       "notes": "Official Mistral pricing; embedding input and cache terms are priced without a generated-output charge. Moderation is explicitly free."
     },
+    "mistral-ocr-2512": {
+      "expression": "param(\"document_annotation_format\") != nil || param(\"bbox_annotation_format\") != nil ? tier(\"annotated\", usd(ocr_pages * 0.003)) : tier(\"standard\", usd(ocr_pages * 0.002))",
+      "unit": "measured",
+      "source_url": "https://docs.mistral.ai/models/ocr-3-25-12",
+      "source_model": "mistral-ocr-2512",
+      "notes": "Official USD 2/1000 standard pages, USD 3/1000 annotated pages. Aliases confirmed by configured official model catalog. /v1/ocr page meter required. No token approximation. Documents require explicit page selection, normalized and limited to 1000; images reserve one page before upstream, exact pages_processed used for settlement; unknown usage retains reservation. Standard realtime tariff, not batch discount."
+    },
+    "mistral-ocr-3": {
+      "expression": "param(\"document_annotation_format\") != nil || param(\"bbox_annotation_format\") != nil ? tier(\"annotated\", usd(ocr_pages * 0.003)) : tier(\"standard\", usd(ocr_pages * 0.002))",
+      "unit": "measured",
+      "source_url": "https://docs.mistral.ai/models/ocr-3-25-12",
+      "source_model": "mistral-ocr-2512",
+      "notes": "Official USD 2/1000 standard pages, USD 3/1000 annotated pages. Aliases confirmed by configured official model catalog. /v1/ocr page meter required. No token approximation. Documents require explicit page selection, normalized and limited to 1000; images reserve one page before upstream, exact pages_processed used for settlement; unknown usage retains reservation. Standard realtime tariff, not batch discount."
+    },
+    "mistral-ocr-3-0": {
+      "expression": "param(\"document_annotation_format\") != nil || param(\"bbox_annotation_format\") != nil ? tier(\"annotated\", usd(ocr_pages * 0.003)) : tier(\"standard\", usd(ocr_pages * 0.002))",
+      "unit": "measured",
+      "source_url": "https://docs.mistral.ai/models/ocr-3-25-12",
+      "source_model": "mistral-ocr-2512",
+      "notes": "Official USD 2/1000 standard pages, USD 3/1000 annotated pages. Aliases confirmed by configured official model catalog. /v1/ocr page meter required. No token approximation. Documents require explicit page selection, normalized and limited to 1000; images reserve one page before upstream, exact pages_processed used for settlement; unknown usage retains reservation. Standard realtime tariff, not batch discount."
+    },
     "mistral-vibe-cli-fast": {
       "expression": "tier(\"standard\", p * 0.15 + cr * 0.015 + c * 0.6)",
       "unit": "token",

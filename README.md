@@ -42,3 +42,11 @@ Measured audio/file and speech contracts use `audio_seconds` and `text_chars`.
 gateway duration/character implementation; they reject incompatible endpoints
 or missing file duration before a paid upstream request. Realtime transcription
 and unrelated protocols are not covered by the file-duration meter.
+
+Native Mistral OCR contracts use `ocr_pages` with `usd(...)`, e.g.
+`tier("pages", usd(ocr_pages * 0.002))`. Standard and annotated pages can have
+different fees selected from the original native request. The `/v1/ocr` host
+reserves a bounded page count and settles on `usage_info.pages_processed`.
+Documents require an explicit `pages` selection (integer array or ranges);
+images default to one page. The outgoing page selection is deduplicated and
+bounded, and response counters exceeding the reservation retain the reserved fee.

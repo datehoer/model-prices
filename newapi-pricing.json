@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "success": true,
-  "generated_at": "2026-10-13T07:42:02.137883+00:00",
+  "generated_at": "2026-10-13T08:19:08.629078+00:00",
   "units": "Token coefficients: USD per million tokens; fixed/task amounts: USD; OpenRouter source prices: USD per token",
   "data": {
     "billing_mode": {
@@ -147,6 +147,9 @@
       "mistral-large-3:675b": "tiered_expr",
       "mistral-medium": "tiered_expr",
       "mistral-moderation-2603": "tiered_expr",
+      "mistral-ocr-2512": "tiered_expr",
+      "mistral-ocr-3": "tiered_expr",
+      "mistral-ocr-3-0": "tiered_expr",
       "mistral-vibe-cli-fast": "tiered_expr",
       "mistral-vibe-cli-latest": "tiered_expr",
       "mistral-vibe-cli-with-tools": "tiered_expr",
@@ -278,7 +281,7 @@
       "vanchin/deepseek-v3.1-terminus": "tier(\"standard\", p * 0.27 + c * 1)",
       "vanchin/deepseek-v4-pro": "tier(\"standard\", p * 0.95526 + c * 1.91052 + cr * 0.079605)",
       "vanchin/deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 1.32 + c * 3.96 + cr * 0.044)",
-      "vanchin/deepseek-v4.1-flash": "tier(\"standard\", p * 0.0441 + c * 0.891 + cr * 0.0054)",
+      "vanchin/deepseek-v4.1-flash": "tier(\"standard\", p * 0.0441 + c * 0.675 + cr * 0.0054)",
       "MedAIBase/AntAngelMed": "tier(\"free_inference\", p * 0 + c * 0)",
       "MiniMax/MiniMax-M1-80k": "tier(\"free_inference\", p * 0 + c * 0)",
       "MusePublic/Qwen-Image-Edit": "tier(\"free_inference\", p * 0 + c * 0)",
@@ -342,6 +345,9 @@
       "mistral-large-3:675b": "tier(\"cloud\", p * 0.5 + c * 1.5)",
       "mistral-medium": "tier(\"standard\", p * 1.5 + cr * 0.15 + c * 7.5)",
       "mistral-moderation-2603": "tier(\"standard\", p * 0 + c * 0)",
+      "mistral-ocr-2512": "param(\"document_annotation_format\") != nil || param(\"bbox_annotation_format\") != nil ? tier(\"annotated\", usd(ocr_pages * 0.003)) : tier(\"standard\", usd(ocr_pages * 0.002))",
+      "mistral-ocr-3": "param(\"document_annotation_format\") != nil || param(\"bbox_annotation_format\") != nil ? tier(\"annotated\", usd(ocr_pages * 0.003)) : tier(\"standard\", usd(ocr_pages * 0.002))",
+      "mistral-ocr-3-0": "param(\"document_annotation_format\") != nil || param(\"bbox_annotation_format\") != nil ? tier(\"annotated\", usd(ocr_pages * 0.003)) : tier(\"standard\", usd(ocr_pages * 0.002))",
       "mistral-vibe-cli-fast": "tier(\"standard\", p * 0.15 + cr * 0.015 + c * 0.6)",
       "mistral-vibe-cli-latest": "tier(\"standard\", p * 1.5 + cr * 0.15 + c * 7.5)",
       "mistral-vibe-cli-with-tools": "tier(\"standard\", p * 1.5 + cr * 0.15 + c * 7.5)",
@@ -1563,7 +1569,7 @@
       "source_model": "deepseek/deepseek-v4.1-flash",
       "pricing": {
         "prompt": "0.0000000441",
-        "completion": "0.000000891",
+        "completion": "0.000000675",
         "input_cache_read": "0.0000000054"
       }
     },
@@ -2069,6 +2075,30 @@
       "source_url": "https://docs.mistral.ai/models/mistral-moderation-26-03",
       "source_model": "mistral-moderation-2603",
       "notes": "Official Mistral pricing; embedding input and cache terms are priced without a generated-output charge. Moderation is explicitly free.",
+      "source": "official_manual"
+    },
+    "mistral-ocr-2512": {
+      "expression": "param(\"document_annotation_format\") != nil || param(\"bbox_annotation_format\") != nil ? tier(\"annotated\", usd(ocr_pages * 0.003)) : tier(\"standard\", usd(ocr_pages * 0.002))",
+      "unit": "measured",
+      "source_url": "https://docs.mistral.ai/models/ocr-3-25-12",
+      "source_model": "mistral-ocr-2512",
+      "notes": "Official USD 2/1000 standard pages, USD 3/1000 annotated pages. Aliases confirmed by configured official model catalog. /v1/ocr page meter required. No token approximation. Documents require explicit page selection, normalized and limited to 1000; images reserve one page before upstream, exact pages_processed used for settlement; unknown usage retains reservation. Standard realtime tariff, not batch discount.",
+      "source": "official_manual"
+    },
+    "mistral-ocr-3": {
+      "expression": "param(\"document_annotation_format\") != nil || param(\"bbox_annotation_format\") != nil ? tier(\"annotated\", usd(ocr_pages * 0.003)) : tier(\"standard\", usd(ocr_pages * 0.002))",
+      "unit": "measured",
+      "source_url": "https://docs.mistral.ai/models/ocr-3-25-12",
+      "source_model": "mistral-ocr-2512",
+      "notes": "Official USD 2/1000 standard pages, USD 3/1000 annotated pages. Aliases confirmed by configured official model catalog. /v1/ocr page meter required. No token approximation. Documents require explicit page selection, normalized and limited to 1000; images reserve one page before upstream, exact pages_processed used for settlement; unknown usage retains reservation. Standard realtime tariff, not batch discount.",
+      "source": "official_manual"
+    },
+    "mistral-ocr-3-0": {
+      "expression": "param(\"document_annotation_format\") != nil || param(\"bbox_annotation_format\") != nil ? tier(\"annotated\", usd(ocr_pages * 0.003)) : tier(\"standard\", usd(ocr_pages * 0.002))",
+      "unit": "measured",
+      "source_url": "https://docs.mistral.ai/models/ocr-3-25-12",
+      "source_model": "mistral-ocr-2512",
+      "notes": "Official USD 2/1000 standard pages, USD 3/1000 annotated pages. Aliases confirmed by configured official model catalog. /v1/ocr page meter required. No token approximation. Documents require explicit page selection, normalized and limited to 1000; images reserve one page before upstream, exact pages_processed used for settlement; unknown usage retains reservation. Standard realtime tariff, not batch discount.",
       "source": "official_manual"
     },
     "mistral-vibe-cli-fast": {
