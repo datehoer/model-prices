@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "success": true,
-  "generated_at": "2026-10-14T06:08:10.899671+00:00",
+  "generated_at": "2026-10-15T05:54:24.148602+00:00",
   "units": "Token coefficients: USD per million tokens; fixed/task amounts: USD; OpenRouter source prices: USD per token",
   "data": {
     "billing_mode": {
@@ -204,17 +204,17 @@
     },
     "billing_expr": {
       "MiniMax/MiniMax-M2.1": "tier(\"standard\", p * 0.3 + c * 1.2 + cr * 0.03)",
-      "MiniMax/MiniMax-M2.5": "tier(\"standard\", p * 0.27 + c * 1.08 + cr * 0.027)",
+      "MiniMax/MiniMax-M2.5": "tier(\"standard\", p * 0.27 + c * 0.95 + cr * 0.03)",
       "MiniMax/MiniMax-M3": "tier(\"standard\", p * 0.3 + c * 1.2 + cr * 0.06)",
-      "Qwen/Qwen3.8-27B": "tier(\"standard\", p * 0.04 + c * 2.3 + cr * 0.0198)",
-      "ZHIPU/GLM-5": "tier(\"standard\", p * 0.6 + c * 1.92 + cr * 0.12)",
-      "ZHIPU/GLM-5.1": "tier(\"standard\", p * 1.33 + c * 4.18 + cr * 0.247)",
-      "ZHIPU/GLM-5.2": "tier(\"standard\", p * 0.05 + c * 7 + cr * 0.049)",
-      "ZHIPU/GLM-5.3": "tier(\"standard\", p * 0.079 + c * 4.8 + cr * 0.059)",
-      "ZHIPU/GLM-5.3-Flash": "tier(\"standard\", p * 0.15 + c * 0.5 + cr * 0.03)",
+      "Qwen/Qwen3.8-27B": "tier(\"standard\", p * 0.24 + c * 2.2 + cr * 0.05)",
+      "ZHIPU/GLM-5": "tier(\"standard\", p * 1 + c * 3.2 + cr * 0.2)",
+      "ZHIPU/GLM-5.1": "tier(\"standard\", p * 0.966 + c * 3.036 + cr * 0.1794)",
+      "ZHIPU/GLM-5.2": "tier(\"standard\", p * 0.037 + c * 7 + cr * 0.036)",
+      "ZHIPU/GLM-5.3": "tier(\"standard\", p * 0.079 + c * 4.8 + cr * 0.078)",
+      "ZHIPU/GLM-5.3-Flash": "tier(\"standard\", p * 0.036 + c * 0.9 + cr * 0.01125)",
       "ZHIPU/GLM-5.3-FlashX": "tier(\"standard\", p * 0.37 + c * 1.25 + cr * 0.09)",
       "ZhipuAI/GLM-4.7-Flash": "tier(\"standard\", p * 0.0605 + c * 0.4)",
-      "ZhipuAI/GLM-5.2": "tier(\"standard\", p * 0.05 + c * 7 + cr * 0.049)",
+      "ZhipuAI/GLM-5.2": "tier(\"standard\", p * 0.037 + c * 7 + cr * 0.036)",
       "claude-fable-5-1": "tier(\"standard\", p * 10 + c * 50 + cr * 0.25 + cc * 12.5 + cc1h * 20)",
       "claude-haiku-5-5": "len < 100000 ? tier(\"standard\", p * 0.1 + c * 0.5 + cr * 0.01 + cc * 0.125 + cc1h * 0.2) : tier(\"context_100000\", p * 0.5 + c * 2.5 + cr * 0.05 + cc * 0.625 + cc1h * 1)",
       "claude-opus-5": "tier(\"standard\", p * 5 + c * 25 + cr * 0.5 + cc * 6.25 + cc1h * 10)",
@@ -223,30 +223,30 @@
       "claude-sonnet-5-5": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 4)",
       "deepseek-ai/DeepSeek-V4-Flash-0731": "tier(\"standard\", p * 0.016 + c * 0.64 + cr * 0.016)",
       "deepseek-v4-flash-0731": "tier(\"standard\", p * 0.016 + c * 0.64 + cr * 0.016)",
-      "deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 1.32 + c * 3.96 + cr * 0.044)",
+      "deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 0.66 + c * 1.98 + cr * 0.022)",
       "gemini-3.5-flash-lite": "tier(\"standard\", p * 0.3 + c * 2.5 + cr * 0.03 + cc * 0.0833333333333333)",
       "gemini-3.6-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "gemini-3.7-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
-      "glm-5.2": "tier(\"standard\", p * 0.05 + c * 7 + cr * 0.049)",
-      "glm-5.3": "tier(\"standard\", p * 0.079 + c * 4.8 + cr * 0.059)",
-      "glm-5.3-flash": "tier(\"standard\", p * 0.15 + c * 0.5 + cr * 0.03)",
+      "glm-5.2": "tier(\"standard\", p * 0.037 + c * 7 + cr * 0.036)",
+      "glm-5.3": "tier(\"standard\", p * 0.079 + c * 4.8 + cr * 0.078)",
+      "glm-5.3-flash": "tier(\"standard\", p * 0.036 + c * 0.9 + cr * 0.01125)",
       "glm-5.3-prime": "tier(\"standard\", p * 2.8 + c * 8.8 + cr * 0.56)",
       "gpt-5.6-luna": "len < 272000 ? tier(\"standard\", p * 0.2 + c * 1.2 + cr * 0.02 + cc * 0.25) : tier(\"context_272000\", p * 0.4 + c * 1.8 + cr * 0.04 + cc * 0.5)",
-      "gpt-5.6-sol": "len < 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.2 + cc * 2.5) : tier(\"context_272000\", p * 4 + c * 15 + cr * 0.4 + cc * 5)",
+      "gpt-5.6-sol": "len < 272000 ? tier(\"standard\", p * 4 + c * 20 + cr * 0.4 + cc * 5) : tier(\"context_272000\", p * 8 + c * 30 + cr * 0.8 + cc * 10)",
       "gpt-5.6-terra": "len < 272000 ? tier(\"standard\", p * 2 + c * 12 + cr * 0.2 + cc * 2.5) : tier(\"context_272000\", p * 4 + c * 18 + cr * 0.4 + cc * 5)",
       "gpt-6-luna": "len < 272000 ? tier(\"standard\", p * 0.1 + c * 0.5 + cr * 0.01 + cc * 0.125) : tier(\"context_272000\", p * 0.2 + c * 0.75 + cr * 0.02 + cc * 0.25)",
       "gpt-6-sol": "len < 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.2 + cc * 2.5) : tier(\"context_272000\", p * 4 + c * 15 + cr * 0.4 + cc * 5)",
       "gpt-6.1-sol": "len < 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5) : tier(\"context_272000\", p * 4 + c * 15 + cr * 0.2 + cc * 5)",
-      "gpt-oss:120b": "tier(\"standard\", p * 0.037 + c * 0.17)",
+      "gpt-oss:120b": "tier(\"standard\", p * 0.15 + c * 0.6 + cr * 0.075)",
       "gpt-oss:20b": "tier(\"standard\", p * 0.018 + c * 0.09 + cr * 0.009)",
       "grok-4.20-multi-agent": "len < 200000 ? tier(\"standard\", p * 1.25 + c * 2.5 + cr * 0.2) : tier(\"context_200000\", p * 2.5 + c * 5 + cr * 0.4)",
       "grok-4.5": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.3) : tier(\"context_200000\", p * 4 + c * 12 + cr * 0.6)",
       "grok-4.6": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
       "grok-4.7": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
       "kimi-k2.7-code": "tier(\"standard\", p * 0.6712 + c * 3.35 + cr * 0.18)",
-      "kimi-k3": "tier(\"standard\", p * 0.7 + c * 15 + cr * 0.32)",
+      "kimi-k3": "tier(\"standard\", p * 0.45 + c * 15 + cr * 0.28)",
       "kimi/kimi-k2.7-code": "tier(\"standard\", p * 0.6712 + c * 3.35 + cr * 0.18)",
-      "kimi/kimi-k3": "tier(\"standard\", p * 0.7 + c * 15 + cr * 0.32)",
+      "kimi/kimi-k3": "tier(\"standard\", p * 0.45 + c * 15 + cr * 0.28)",
       "mistral-medium-3": "tier(\"standard\", p * 0.4 + c * 2 + cr * 0.04)",
       "mistral-medium-3-5": "tier(\"standard\", p * 1.5 + c * 7.5)",
       "mistral-medium-3.5": "tier(\"standard\", p * 1.5 + c * 7.5)",
@@ -264,15 +264,15 @@
       "models/gemini-3.7-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "models/gemini-3.8-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "models/gemini-flash-latest": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
-      "models/gemini-pro-latest": "len < 200000 ? tier(\"standard\", p * 2 + c * 12 + cr * 0.2 + cc * 0.375) : tier(\"context_200000\", p * 4 + c * 18 + cr * 0.4 + cc * 0.375)",
-      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.09 + c * 0.3 + cr * 0.05)",
-      "models/gemma-4-31b-it": "tier(\"standard\", p * 0.09 + c * 0.34 + cr * 0.05)",
+      "models/gemini-pro-latest": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 0.1875)",
+      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.0765 + c * 0.255 + cr * 0.0425)",
+      "models/gemma-4-31b-it": "tier(\"standard\", p * 0.2 + c * 0.4)",
       "nex-agi/Nex-N2.5-Pro": "tier(\"standard\", p * 0.075 + c * 0.25 + cr * 0.015)",
       "nex-agi/Nex-N2.5-mini": "tier(\"standard\", p * 0.025 + c * 0.1 + cr * 0.0025)",
       "qwen3.5-plus-2026-04-20": "len < 256000 ? tier(\"standard\", p * 0.3 + c * 1.8 + cc * 0.375) : tier(\"context_256000\", p * 0.375 + c * 2.25 + cc * 0.46875)",
       "qwen3.7-flash": "len < 32000 ? tier(\"standard\", p * 0.03 + c * 0.13 + cr * 0.006 + cc * 0.038) : len < 256000 ? tier(\"context_32000\", p * 0.1 + c * 0.4 + cr * 0.02 + cc * 0.125) : tier(\"context_256000\", p * 0.2 + c * 0.8 + cr * 0.04 + cc * 0.25)",
       "qwen3.8-2.4t-a95b": "tier(\"standard\", p * 2 + c * 6 + cr * 0.25)",
-      "qwen3.8-27b": "tier(\"standard\", p * 0.04 + c * 2.3 + cr * 0.0198)",
+      "qwen3.8-27b": "tier(\"standard\", p * 0.24 + c * 2.2 + cr * 0.05)",
       "qwen3.8-flash": "tier(\"standard\", p * 0.15 + c * 0.47 + cr * 0.016)",
       "qwen3.8-max-0902": "tier(\"standard\", p * 2 + c * 6 + cr * 0.25)",
       "qwen3.8-omni-flash": "tier(\"standard\", p * 0.15 + c * 0.47 + cr * 0.016)",
@@ -280,8 +280,8 @@
       "vanchin/deepseek-r1": "tier(\"standard\", p * 0.7 + c * 2.5)",
       "vanchin/deepseek-v3.1-terminus": "tier(\"standard\", p * 0.27 + c * 1)",
       "vanchin/deepseek-v4-pro": "tier(\"standard\", p * 0.95526 + c * 1.91052 + cr * 0.079605)",
-      "vanchin/deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 1.32 + c * 3.96 + cr * 0.044)",
-      "vanchin/deepseek-v4.1-flash": "tier(\"standard\", p * 0.0103 + c * 0.6 + cr * 0.008)",
+      "vanchin/deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 0.66 + c * 1.98 + cr * 0.022)",
+      "vanchin/deepseek-v4.1-flash": "tier(\"standard\", p * 0.01368 + c * 0.891 + cr * 0.0036)",
       "MedAIBase/AntAngelMed": "tier(\"free_inference\", p * 0 + c * 0)",
       "MiniMax/MiniMax-M1-80k": "tier(\"free_inference\", p * 0 + c * 0)",
       "MusePublic/Qwen-Image-Edit": "tier(\"free_inference\", p * 0 + c * 0)",
@@ -416,8 +416,8 @@
       "source_model": "minimax/minimax-m2.5",
       "pricing": {
         "prompt": "0.00000027",
-        "completion": "0.00000108",
-        "input_cache_read": "0.000000027"
+        "completion": "0.00000095",
+        "input_cache_read": "0.00000003"
       }
     },
     "MiniMax/MiniMax-M3": {
@@ -433,36 +433,36 @@
       "source": "openrouter",
       "source_model": "qwen/qwen3.8-27b",
       "pricing": {
-        "prompt": "0.00000004",
-        "completion": "0.0000023",
-        "input_cache_read": "0.0000000198"
+        "prompt": "0.00000024",
+        "completion": "0.0000022",
+        "input_cache_read": "0.00000005"
       }
     },
     "ZHIPU/GLM-5": {
       "source": "openrouter",
       "source_model": "z-ai/glm-5",
       "pricing": {
-        "prompt": "0.0000006",
-        "completion": "0.00000192",
-        "input_cache_read": "0.00000012"
+        "prompt": "0.000001",
+        "completion": "0.0000032",
+        "input_cache_read": "0.0000002"
       }
     },
     "ZHIPU/GLM-5.1": {
       "source": "openrouter",
       "source_model": "z-ai/glm-5.1",
       "pricing": {
-        "prompt": "0.00000133",
-        "completion": "0.00000418",
-        "input_cache_read": "0.000000247"
+        "prompt": "0.000000966",
+        "completion": "0.000003036",
+        "input_cache_read": "0.0000001794"
       }
     },
     "ZHIPU/GLM-5.2": {
       "source": "openrouter",
       "source_model": "z-ai/glm-5.2",
       "pricing": {
-        "prompt": "0.00000005",
+        "prompt": "0.000000037",
         "completion": "0.000007",
-        "input_cache_read": "0.000000049"
+        "input_cache_read": "0.000000036"
       }
     },
     "ZHIPU/GLM-5.3": {
@@ -471,16 +471,16 @@
       "pricing": {
         "prompt": "0.000000079",
         "completion": "0.0000048",
-        "input_cache_read": "0.000000059"
+        "input_cache_read": "0.000000078"
       }
     },
     "ZHIPU/GLM-5.3-Flash": {
       "source": "openrouter",
       "source_model": "z-ai/glm-5.3-flash",
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000005",
-        "input_cache_read": "0.00000003"
+        "prompt": "0.000000036",
+        "completion": "0.0000009",
+        "input_cache_read": "0.00000001125"
       }
     },
     "ZHIPU/GLM-5.3-FlashX": {
@@ -504,9 +504,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.2",
       "pricing": {
-        "prompt": "0.00000005",
+        "prompt": "0.000000037",
         "completion": "0.000007",
-        "input_cache_read": "0.000000049"
+        "input_cache_read": "0.000000036"
       }
     },
     "claude-fable-5-1": {
@@ -613,9 +613,9 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-pro-0813",
       "pricing": {
-        "prompt": "0.00000132",
-        "completion": "0.00000396",
-        "input_cache_read": "0.000000044",
+        "prompt": "0.00000066",
+        "completion": "0.00000198",
+        "input_cache_read": "0.000000022",
         "overrides": [
           {
             "utc_days": [
@@ -748,9 +748,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.2",
       "pricing": {
-        "prompt": "0.00000005",
+        "prompt": "0.000000037",
         "completion": "0.000007",
-        "input_cache_read": "0.000000049"
+        "input_cache_read": "0.000000036"
       }
     },
     "glm-5.3": {
@@ -759,16 +759,16 @@
       "pricing": {
         "prompt": "0.000000079",
         "completion": "0.0000048",
-        "input_cache_read": "0.000000059"
+        "input_cache_read": "0.000000078"
       }
     },
     "glm-5.3-flash": {
       "source": "openrouter",
       "source_model": "z-ai/glm-5.3-flash",
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000005",
-        "input_cache_read": "0.00000003"
+        "prompt": "0.000000036",
+        "completion": "0.0000009",
+        "input_cache_read": "0.00000001125"
       }
     },
     "glm-5.3-prime": {
@@ -804,18 +804,18 @@
       "source": "openrouter",
       "source_model": "openai/gpt-5.6-sol",
       "pricing": {
-        "prompt": "0.000002",
-        "completion": "0.00001",
+        "prompt": "0.000004",
+        "completion": "0.00002",
         "web_search": "0.01",
-        "input_cache_read": "0.0000002",
-        "input_cache_write": "0.0000025",
+        "input_cache_read": "0.0000004",
+        "input_cache_write": "0.000005",
         "overrides": [
           {
             "min_prompt_tokens": 272000,
-            "prompt": "0.000004",
-            "completion": "0.000015",
-            "input_cache_read": "0.0000004",
-            "input_cache_write": "0.000005"
+            "prompt": "0.000008",
+            "completion": "0.00003",
+            "input_cache_read": "0.0000008",
+            "input_cache_write": "0.00001"
           }
         ]
       }
@@ -904,8 +904,9 @@
       "source": "openrouter",
       "source_model": "openai/gpt-oss-120b",
       "pricing": {
-        "prompt": "0.000000037",
-        "completion": "0.00000017"
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000075"
       }
     },
     "gpt-oss:20b": {
@@ -1002,9 +1003,9 @@
       "source": "openrouter",
       "source_model": "moonshotai/kimi-k3",
       "pricing": {
-        "prompt": "0.0000007",
+        "prompt": "0.00000045",
         "completion": "0.000015",
-        "input_cache_read": "0.00000032"
+        "input_cache_read": "0.00000028"
       }
     },
     "kimi/kimi-k2.7-code": {
@@ -1020,9 +1021,9 @@
       "source": "openrouter",
       "source_model": "moonshotai/kimi-k3",
       "pricing": {
-        "prompt": "0.0000007",
+        "prompt": "0.00000045",
         "completion": "0.000015",
-        "input_cache_read": "0.00000032"
+        "input_cache_read": "0.00000028"
       }
     },
     "mistral-medium-3": {
@@ -1295,42 +1296,31 @@
       "source_model": "~google/gemini-pro-latest",
       "pricing": {
         "prompt": "0.000002",
-        "completion": "0.000012",
+        "completion": "0.00001",
         "image": "0.000002",
         "audio": "0.000002",
-        "input_audio_cache": "0.0000002",
+        "input_audio_cache": "0.0000001",
         "web_search": "0.014",
-        "internal_reasoning": "0.000012",
-        "input_cache_read": "0.0000002",
-        "input_cache_write": "0.000000375",
-        "overrides": [
-          {
-            "min_prompt_tokens": 200000,
-            "prompt": "0.000004",
-            "completion": "0.000018",
-            "audio": "0.000004",
-            "input_audio_cache": "0.0000004",
-            "input_cache_read": "0.0000004"
-          }
-        ]
+        "internal_reasoning": "0.00001",
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000001875"
       }
     },
     "models/gemma-4-26b-a4b-it": {
       "source": "openrouter",
       "source_model": "google/gemma-4-26b-a4b-it",
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       }
     },
     "models/gemma-4-31b-it": {
       "source": "openrouter",
       "source_model": "google/gemma-4-31b-it",
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.00000034",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000002",
+        "completion": "0.0000004"
       }
     },
     "nex-agi/Nex-N2.5-Pro": {
@@ -1407,9 +1397,9 @@
       "source": "openrouter",
       "source_model": "qwen/qwen3.8-27b",
       "pricing": {
-        "prompt": "0.00000004",
-        "completion": "0.0000023",
-        "input_cache_read": "0.0000000198"
+        "prompt": "0.00000024",
+        "completion": "0.0000022",
+        "input_cache_read": "0.00000005"
       }
     },
     "qwen3.8-flash": {
@@ -1477,9 +1467,9 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-pro-0813",
       "pricing": {
-        "prompt": "0.00000132",
-        "completion": "0.00000396",
-        "input_cache_read": "0.000000044",
+        "prompt": "0.00000066",
+        "completion": "0.00000198",
+        "input_cache_read": "0.000000022",
         "overrides": [
           {
             "utc_days": [
@@ -1567,9 +1557,9 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4.1-flash",
       "pricing": {
-        "prompt": "0.0000000103",
-        "completion": "0.0000006",
-        "input_cache_read": "0.000000008"
+        "prompt": "0.00000001368",
+        "completion": "0.000000891",
+        "input_cache_read": "0.0000000036"
       }
     },
     "MedAIBase/AntAngelMed": {
