@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "success": true,
-  "generated_at": "2026-10-16T05:51:38.019142+00:00",
+  "generated_at": "2026-10-17T05:35:53.778752+00:00",
   "units": "Token coefficients: USD per million tokens; fixed/task amounts: USD; OpenRouter source prices: USD per token",
   "data": {
     "billing_mode": {
@@ -211,7 +211,7 @@
       "ZHIPU/GLM-5.1": "tier(\"standard\", p * 0.966 + c * 3.036 + cr * 0.1794)",
       "ZHIPU/GLM-5.2": "tier(\"standard\", p * 0.62 + c * 2.42 + cr * 0.14)",
       "ZHIPU/GLM-5.3": "tier(\"standard\", p * 0.079 + c * 4.8 + cr * 0.078)",
-      "ZHIPU/GLM-5.3-Flash": "tier(\"standard\", p * 0.15 + c * 0.5 + cr * 0.03)",
+      "ZHIPU/GLM-5.3-Flash": "tier(\"standard\", p * 0.057 + c * 0.5578 + cr * 0.0075)",
       "ZHIPU/GLM-5.3-FlashX": "tier(\"standard\", p * 0.37 + c * 1.25 + cr * 0.09)",
       "ZhipuAI/GLM-4.7-Flash": "tier(\"standard\", p * 0.0605 + c * 0.4)",
       "ZhipuAI/GLM-5.2": "tier(\"standard\", p * 0.62 + c * 2.42 + cr * 0.14)",
@@ -221,15 +221,15 @@
       "claude-opus-5-5": "tier(\"standard\", p * 4 + c * 20 + cr * 0.2 + cc * 5 + cc1h * 8)",
       "claude-sonnet-5": "tier(\"standard\", p * 2 + c * 10 + cr * 0.2 + cc * 2.5 + cc1h * 4)",
       "claude-sonnet-5-5": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 4)",
-      "deepseek-ai/DeepSeek-V4-Flash-0731": "tier(\"standard\", p * 0.0154 + c * 0.64 + cr * 0.0154)",
-      "deepseek-v4-flash-0731": "tier(\"standard\", p * 0.0154 + c * 0.64 + cr * 0.0154)",
+      "deepseek-ai/DeepSeek-V4-Flash-0731": "tier(\"standard\", p * 0.0199 + c * 0.9653 + cr * 0.014)",
+      "deepseek-v4-flash-0731": "tier(\"standard\", p * 0.0199 + c * 0.9653 + cr * 0.014)",
       "deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 0.66 + c * 1.98 + cr * 0.022)",
       "gemini-3.5-flash-lite": "tier(\"standard\", p * 0.3 + c * 2.5 + cr * 0.03 + cc * 0.0833333333333333)",
       "gemini-3.6-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "gemini-3.7-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "glm-5.2": "tier(\"standard\", p * 0.62 + c * 2.42 + cr * 0.14)",
       "glm-5.3": "tier(\"standard\", p * 0.079 + c * 4.8 + cr * 0.078)",
-      "glm-5.3-flash": "tier(\"standard\", p * 0.15 + c * 0.5 + cr * 0.03)",
+      "glm-5.3-flash": "tier(\"standard\", p * 0.057 + c * 0.5578 + cr * 0.0075)",
       "glm-5.3-prime": "tier(\"standard\", p * 2.8 + c * 8.8 + cr * 0.56)",
       "gpt-5.6-luna": "len < 272000 ? tier(\"standard\", p * 0.2 + c * 1.2 + cr * 0.02 + cc * 0.25) : tier(\"context_272000\", p * 0.4 + c * 1.8 + cr * 0.04 + cc * 0.5)",
       "gpt-5.6-sol": "len < 272000 ? tier(\"standard\", p * 4 + c * 20 + cr * 0.4 + cc * 5) : tier(\"context_272000\", p * 8 + c * 30 + cr * 0.8 + cc * 10)",
@@ -244,9 +244,9 @@
       "grok-4.6": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
       "grok-4.7": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
       "kimi-k2.7-code": "tier(\"standard\", p * 0.6712 + c * 3.35 + cr * 0.18)",
-      "kimi-k3": "tier(\"standard\", p * 0.304 + c * 11.588 + cr * 0.21)",
+      "kimi-k3": "tier(\"standard\", p * 0.304 + c * 11.936 + cr * 0.21)",
       "kimi/kimi-k2.7-code": "tier(\"standard\", p * 0.6712 + c * 3.35 + cr * 0.18)",
-      "kimi/kimi-k3": "tier(\"standard\", p * 0.304 + c * 11.588 + cr * 0.21)",
+      "kimi/kimi-k3": "tier(\"standard\", p * 0.304 + c * 11.936 + cr * 0.21)",
       "mistral-medium-3": "tier(\"standard\", p * 0.4 + c * 2 + cr * 0.04)",
       "mistral-medium-3-5": "tier(\"standard\", p * 1.5 + c * 7.5)",
       "mistral-medium-3.5": "tier(\"standard\", p * 1.5 + c * 7.5)",
@@ -265,7 +265,7 @@
       "models/gemini-3.8-flash": "tier(\"standard\", p * 0.825 + c * 4.125 + cr * 0.0825 + cc * 0.0416666666666667)",
       "models/gemini-flash-latest": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "models/gemini-pro-latest": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 0.1875)",
-      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.0765 + c * 0.255 + cr * 0.0425)",
+      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.0675 + c * 0.225 + cr * 0.0375)",
       "models/gemma-4-31b-it": "tier(\"standard\", p * 0.2 + c * 0.4)",
       "nex-agi/Nex-N2.5-Pro": "tier(\"standard\", p * 0.075 + c * 0.25 + cr * 0.015)",
       "nex-agi/Nex-N2.5-mini": "tier(\"standard\", p * 0.025 + c * 0.1 + cr * 0.0025)",
@@ -279,9 +279,9 @@
       "stepfun-ai/Step-3.7-Flash": "tier(\"standard\", p * 0.2 + c * 1.15 + cr * 0.04)",
       "vanchin/deepseek-r1": "tier(\"standard\", p * 0.7 + c * 2.5)",
       "vanchin/deepseek-v3.1-terminus": "tier(\"standard\", p * 0.27 + c * 1)",
-      "vanchin/deepseek-v4-pro": "tier(\"standard\", p * 0.95526 + c * 1.91052 + cr * 0.079605)",
+      "vanchin/deepseek-v4-pro": "tier(\"standard\", p * 0.2088 + c * 0.4176 + cr * 0.0174)",
       "vanchin/deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 0.66 + c * 1.98 + cr * 0.022)",
-      "vanchin/deepseek-v4.1-flash": "tier(\"standard\", p * 0.036 + c * 0.7047 + cr * 0.0054)",
+      "vanchin/deepseek-v4.1-flash": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.15 + c * 0.6 + cr * 0.003) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.15 + c * 0.6 + cr * 0.003) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 0.3 + c * 1.2 + cr * 0.006) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.15 + c * 0.6 + cr * 0.003) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 0.3 + c * 1.2 + cr * 0.006) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.15 + c * 0.6 + cr * 0.003) : tier(\"standard\", p * 0.15 + c * 0.6 + cr * 0.003)",
       "MedAIBase/AntAngelMed": "tier(\"free_inference\", p * 0 + c * 0)",
       "MiniMax/MiniMax-M1-80k": "tier(\"free_inference\", p * 0 + c * 0)",
       "MusePublic/Qwen-Image-Edit": "tier(\"free_inference\", p * 0 + c * 0)",
@@ -478,9 +478,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.3-flash",
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000005",
-        "input_cache_read": "0.00000003"
+        "prompt": "0.000000057",
+        "completion": "0.0000005578",
+        "input_cache_read": "0.0000000075"
       }
     },
     "ZHIPU/GLM-5.3-FlashX": {
@@ -595,18 +595,18 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-flash-0731",
       "pricing": {
-        "prompt": "0.0000000154",
-        "completion": "0.00000064",
-        "input_cache_read": "0.0000000154"
+        "prompt": "0.0000000199",
+        "completion": "0.0000009653",
+        "input_cache_read": "0.000000014"
       }
     },
     "deepseek-v4-flash-0731": {
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-flash-0731",
       "pricing": {
-        "prompt": "0.0000000154",
-        "completion": "0.00000064",
-        "input_cache_read": "0.0000000154"
+        "prompt": "0.0000000199",
+        "completion": "0.0000009653",
+        "input_cache_read": "0.000000014"
       }
     },
     "deepseek-v4-pro-0813": {
@@ -766,9 +766,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.3-flash",
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000005",
-        "input_cache_read": "0.00000003"
+        "prompt": "0.000000057",
+        "completion": "0.0000005578",
+        "input_cache_read": "0.0000000075"
       }
     },
     "glm-5.3-prime": {
@@ -1004,7 +1004,7 @@
       "source_model": "moonshotai/kimi-k3",
       "pricing": {
         "prompt": "0.000000304",
-        "completion": "0.000011588",
+        "completion": "0.000011936",
         "input_cache_read": "0.00000021"
       }
     },
@@ -1022,7 +1022,7 @@
       "source_model": "moonshotai/kimi-k3",
       "pricing": {
         "prompt": "0.000000304",
-        "completion": "0.000011588",
+        "completion": "0.000011936",
         "input_cache_read": "0.00000021"
       }
     },
@@ -1310,9 +1310,9 @@
       "source": "openrouter",
       "source_model": "google/gemma-4-26b-a4b-it",
       "pricing": {
-        "prompt": "0.0000000765",
-        "completion": "0.000000255",
-        "input_cache_read": "0.0000000425"
+        "prompt": "0.0000000675",
+        "completion": "0.000000225",
+        "input_cache_read": "0.0000000375"
       }
     },
     "models/gemma-4-31b-it": {
@@ -1458,9 +1458,9 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-pro",
       "pricing": {
-        "prompt": "0.00000095526",
-        "completion": "0.00000191052",
-        "input_cache_read": "0.000000079605"
+        "prompt": "0.0000002088",
+        "completion": "0.0000004176",
+        "input_cache_read": "0.0000000174"
       }
     },
     "vanchin/deepseek-v4-pro-0813": {
@@ -1557,9 +1557,90 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4.1-flash",
       "pricing": {
-        "prompt": "0.000000036",
-        "completion": "0.0000007047",
-        "input_cache_read": "0.0000000054"
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000003",
+        "overrides": [
+          {
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 0,
+            "utc_end": 100,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 100,
+            "utc_end": 400,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 400,
+            "utc_end": 600,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 600,
+            "utc_end": 1000,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 1000,
+            "utc_end": 0,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          }
+        ]
       }
     },
     "MedAIBase/AntAngelMed": {
