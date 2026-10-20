@@ -479,6 +479,27 @@
       "source_model": "meituan-longcat/LongCat-Flash-Lite",
       "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits."
     },
+    "mercury-2": {
+      "expression": "tier(\"standard\", p * 0.25 + c * 0.75 + cr * 0.025)",
+      "unit": "token",
+      "source_url": "https://docs.inceptionlabs.ai/get-started/models",
+      "source_model": "mercury-2",
+      "notes": "Official Inception API pricing, USD per 1M tokens. Registered ID verified in the live api.inceptionlabs.ai /v1/models catalog on 2026-10-20. The same prices appear in that catalog. No cache-write price is published."
+    },
+    "mercury-2.5": {
+      "expression": "tier(\"standard\", p * 0.2 + c * 0.75 + cr * 0.02)",
+      "unit": "token",
+      "source_url": "https://docs.inceptionlabs.ai/get-started/models",
+      "source_model": "mercury-2.5",
+      "notes": "Official Inception API pricing, USD per 1M tokens. Registered ID verified in the live api.inceptionlabs.ai /v1/models catalog on 2026-10-20. The same prices appear in that catalog. No cache-write price is published."
+    },
+    "mercury-3": {
+      "expression": "tier(\"standard\", p * 0.1 + c * 0.35 + cr * 0.01)",
+      "unit": "token",
+      "source_url": "https://docs.inceptionlabs.ai/get-started/models",
+      "source_model": "mercury-3",
+      "notes": "Official Inception API launch price, 50% off the listed regular $0.20 input, $0.02 cached input and $0.70 output per 1M tokens. The page gives no end date; update this contract when the discount ends. Registered ID verified in the live api.inceptionlabs.ai /v1/models catalog on 2026-10-20. Its pricing fields read 0 there, so the docs page is the price source. No long-context tier or cache-write price is published."
+    },
     "midjourney": {
       "expression": "tier(\"upstream\", fixed(0.036873156342))",
       "unit": "request",

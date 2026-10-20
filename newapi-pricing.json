@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "success": true,
-  "generated_at": "2026-10-20T07:55:07.998743+00:00",
+  "generated_at": "2026-10-20T07:55:31.098010+00:00",
   "units": "Token coefficients: USD per million tokens; fixed/task amounts: USD; OpenRouter source prices: USD per token",
   "data": {
     "billing_mode": {
@@ -140,6 +140,9 @@
       "kimi-k2.7-code-highspeed": "tiered_expr",
       "magistral-small-latest": "tiered_expr",
       "meituan-longcat/LongCat-Flash-Lite": "tiered_expr",
+      "mercury-2": "tiered_expr",
+      "mercury-2.5": "tiered_expr",
+      "mercury-3": "tiered_expr",
       "midjourney": "tiered_expr",
       "ministral-14b-latest": "tiered_expr",
       "mistral-code-fim-latest": "tiered_expr",
@@ -338,6 +341,9 @@
       "kimi-k2.7-code-highspeed": "tier(\"standard\", p * 1.917404129794 + c * 7.964601769912 + cr * 0.383480825959)",
       "magistral-small-latest": "tier(\"standard\", p * 0.15 + cr * 0.015 + c * 0.6)",
       "meituan-longcat/LongCat-Flash-Lite": "tier(\"free_inference\", p * 0 + c * 0)",
+      "mercury-2": "tier(\"standard\", p * 0.25 + c * 0.75 + cr * 0.025)",
+      "mercury-2.5": "tier(\"standard\", p * 0.2 + c * 0.75 + cr * 0.02)",
+      "mercury-3": "tier(\"standard\", p * 0.1 + c * 0.35 + cr * 0.01)",
       "midjourney": "tier(\"upstream\", fixed(0.036873156342))",
       "ministral-14b-latest": "tier(\"standard\", p * 0.2 + cr * 0.02 + c * 0.2)",
       "mistral-code-fim-latest": "tier(\"standard\", p * 0.3 + cr * 0.03 + c * 0.9)",
@@ -1846,6 +1852,30 @@
       "source_url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
       "source_model": "meituan-longcat/LongCat-Flash-Lite",
       "notes": "Exclusive ModelScope API-Inference route, distinct from paid API-Provider. Registered ID verified in the live /v1/models catalog. Explicit free service tariff within provider quotas; quota exhaustion still follows provider limits.",
+      "source": "official_manual"
+    },
+    "mercury-2": {
+      "expression": "tier(\"standard\", p * 0.25 + c * 0.75 + cr * 0.025)",
+      "unit": "token",
+      "source_url": "https://docs.inceptionlabs.ai/get-started/models",
+      "source_model": "mercury-2",
+      "notes": "Official Inception API pricing, USD per 1M tokens. Registered ID verified in the live api.inceptionlabs.ai /v1/models catalog on 2026-10-20. The same prices appear in that catalog. No cache-write price is published.",
+      "source": "official_manual"
+    },
+    "mercury-2.5": {
+      "expression": "tier(\"standard\", p * 0.2 + c * 0.75 + cr * 0.02)",
+      "unit": "token",
+      "source_url": "https://docs.inceptionlabs.ai/get-started/models",
+      "source_model": "mercury-2.5",
+      "notes": "Official Inception API pricing, USD per 1M tokens. Registered ID verified in the live api.inceptionlabs.ai /v1/models catalog on 2026-10-20. The same prices appear in that catalog. No cache-write price is published.",
+      "source": "official_manual"
+    },
+    "mercury-3": {
+      "expression": "tier(\"standard\", p * 0.1 + c * 0.35 + cr * 0.01)",
+      "unit": "token",
+      "source_url": "https://docs.inceptionlabs.ai/get-started/models",
+      "source_model": "mercury-3",
+      "notes": "Official Inception API launch price, 50% off the listed regular $0.20 input, $0.02 cached input and $0.70 output per 1M tokens. The page gives no end date; update this contract when the discount ends. Registered ID verified in the live api.inceptionlabs.ai /v1/models catalog on 2026-10-20. Its pricing fields read 0 there, so the docs page is the price source. No long-context tier or cache-write price is published.",
       "source": "official_manual"
     },
     "midjourney": {
