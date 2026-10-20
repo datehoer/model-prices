@@ -80,7 +80,12 @@
     "vanchin/deepseek-v4-pro-0813": "deepseek/deepseek-v4-pro-0813",
     "vanchin/deepseek-v4.1-flash": "deepseek/deepseek-v4.1-flash"
   },
-  "overrides": {},
+  "overrides": {
+    "vanchin/deepseek-r1": {
+      "prompt": "0.0000007",
+      "completion": "0.0000025"
+    }
+  },
   "contracts": {
     "MedAIBase/AntAngelMed": {
       "expression": "tier(\"free_inference\", p * 0 + c * 0)",
