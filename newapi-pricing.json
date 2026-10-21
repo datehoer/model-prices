@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "success": true,
-  "generated_at": "2026-10-20T07:58:06.684734+00:00",
+  "generated_at": "2026-10-21T06:01:25.353432+00:00",
   "units": "Token coefficients: USD per million tokens; fixed/task amounts: USD; OpenRouter source prices: USD per token",
   "data": {
     "billing_mode": {
@@ -210,14 +210,14 @@
       "MiniMax/MiniMax-M2.5": "tier(\"standard\", p * 0.27 + c * 0.95 + cr * 0.03)",
       "MiniMax/MiniMax-M3": "tier(\"standard\", p * 0.3 + c * 1.2 + cr * 0.06)",
       "Qwen/Qwen3.8-27B": "tier(\"standard\", p * 0.04 + c * 1.35 + cr * 0.018)",
-      "ZHIPU/GLM-5": "tier(\"standard\", p * 0.6 + c * 1.92 + cr * 0.12)",
-      "ZHIPU/GLM-5.1": "tier(\"standard\", p * 0.966 + c * 3.036 + cr * 0.1794)",
-      "ZHIPU/GLM-5.2": "tier(\"standard\", p * 0.62 + c * 2.42 + cr * 0.14)",
+      "ZHIPU/GLM-5": "tier(\"standard\", p * 1 + c * 3.2 + cr * 0.2)",
+      "ZHIPU/GLM-5.1": "tier(\"standard\", p * 1.4 + c * 4.4 + cr * 0.26)",
+      "ZHIPU/GLM-5.2": "tier(\"standard\", p * 0.0341 + c * 7 + cr * 0.033)",
       "ZHIPU/GLM-5.3": "tier(\"standard\", p * 0.079 + c * 1.4 + cr * 0.078)",
-      "ZHIPU/GLM-5.3-Flash": "tier(\"standard\", p * 0.048 + c * 0.16 + cr * 0.006)",
+      "ZHIPU/GLM-5.3-Flash": "tier(\"standard\", p * 0.041191 + c * 0.375 + cr * 0.00375)",
       "ZHIPU/GLM-5.3-FlashX": "tier(\"standard\", p * 0.37 + c * 1.25 + cr * 0.09)",
       "ZhipuAI/GLM-4.7-Flash": "tier(\"standard\", p * 0.0605 + c * 0.4)",
-      "ZhipuAI/GLM-5.2": "tier(\"standard\", p * 0.62 + c * 2.42 + cr * 0.14)",
+      "ZhipuAI/GLM-5.2": "tier(\"standard\", p * 0.0341 + c * 7 + cr * 0.033)",
       "claude-fable-5-1": "tier(\"standard\", p * 10 + c * 50 + cr * 0.25 + cc * 12.5 + cc1h * 20)",
       "claude-haiku-5-5": "len < 100000 ? tier(\"standard\", p * 0.1 + c * 0.5 + cr * 0.01 + cc * 0.125 + cc1h * 0.2) : tier(\"context_100000\", p * 0.5 + c * 2.5 + cr * 0.05 + cc * 0.625 + cc1h * 1)",
       "claude-opus-5": "tier(\"standard\", p * 5 + c * 25 + cr * 0.5 + cc * 6.25 + cc1h * 10)",
@@ -230,9 +230,9 @@
       "gemini-3.5-flash-lite": "tier(\"standard\", p * 0.3 + c * 2.5 + cr * 0.03 + cc * 0.0833333333333333)",
       "gemini-3.6-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "gemini-3.7-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
-      "glm-5.2": "tier(\"standard\", p * 0.62 + c * 2.42 + cr * 0.14)",
+      "glm-5.2": "tier(\"standard\", p * 0.0341 + c * 7 + cr * 0.033)",
       "glm-5.3": "tier(\"standard\", p * 0.079 + c * 1.4 + cr * 0.078)",
-      "glm-5.3-flash": "tier(\"standard\", p * 0.048 + c * 0.16 + cr * 0.006)",
+      "glm-5.3-flash": "tier(\"standard\", p * 0.041191 + c * 0.375 + cr * 0.00375)",
       "glm-5.3-prime": "tier(\"standard\", p * 2.8 + c * 8.8 + cr * 0.56)",
       "gpt-5.6-luna": "len < 272000 ? tier(\"standard\", p * 0.2 + c * 1.2 + cr * 0.02 + cc * 0.25) : tier(\"context_272000\", p * 0.4 + c * 1.8 + cr * 0.04 + cc * 0.5)",
       "gpt-5.6-sol": "len < 272000 ? tier(\"standard\", p * 4 + c * 20 + cr * 0.4 + cc * 5) : tier(\"context_272000\", p * 8 + c * 30 + cr * 0.8 + cc * 10)",
@@ -268,7 +268,7 @@
       "models/gemini-3.8-flash": "tier(\"standard\", p * 0.825 + c * 4.125 + cr * 0.0825 + cc * 0.0416666666666667)",
       "models/gemini-flash-latest": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "models/gemini-pro-latest": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 0.1875)",
-      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.09 + c * 0.3 + cr * 0.05)",
+      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.0765 + c * 0.255 + cr * 0.0425)",
       "models/gemma-4-31b-it": "tier(\"standard\", p * 0.2 + c * 0.4)",
       "nex-agi/Nex-N2.5-Pro": "tier(\"standard\", p * 0.075 + c * 0.25 + cr * 0.015)",
       "nex-agi/Nex-N2.5-mini": "tier(\"standard\", p * 0.025 + c * 0.1 + cr * 0.0025)",
@@ -284,7 +284,7 @@
       "vanchin/deepseek-v3.1-terminus": "tier(\"standard\", p * 0.27 + c * 1)",
       "vanchin/deepseek-v4-pro": "tier(\"standard\", p * 0.95526 + c * 1.91052 + cr * 0.079605)",
       "vanchin/deepseek-v4-pro-0813": "tier(\"standard\", p * 0.66 + c * 1.98 + cr * 0.022)",
-      "vanchin/deepseek-v4.1-flash": "tier(\"standard\", p * 0.0352 + c * 0.0112 + cr * 0.0016)",
+      "vanchin/deepseek-v4.1-flash": "tier(\"standard\", p * 0.049 + c * 0.375 + cr * 0.001)",
       "MedAIBase/AntAngelMed": "tier(\"free_inference\", p * 0 + c * 0)",
       "MiniMax/MiniMax-M1-80k": "tier(\"free_inference\", p * 0 + c * 0)",
       "MusePublic/Qwen-Image-Edit": "tier(\"free_inference\", p * 0 + c * 0)",
@@ -448,27 +448,27 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5",
       "pricing": {
-        "prompt": "0.0000006",
-        "completion": "0.00000192",
-        "input_cache_read": "0.00000012"
+        "prompt": "0.000001",
+        "completion": "0.0000032",
+        "input_cache_read": "0.0000002"
       }
     },
     "ZHIPU/GLM-5.1": {
       "source": "openrouter",
       "source_model": "z-ai/glm-5.1",
       "pricing": {
-        "prompt": "0.000000966",
-        "completion": "0.000003036",
-        "input_cache_read": "0.0000001794"
+        "prompt": "0.0000014",
+        "completion": "0.0000044",
+        "input_cache_read": "0.00000026"
       }
     },
     "ZHIPU/GLM-5.2": {
       "source": "openrouter",
       "source_model": "z-ai/glm-5.2",
       "pricing": {
-        "prompt": "0.00000062",
-        "completion": "0.00000242",
-        "input_cache_read": "0.00000014"
+        "prompt": "0.0000000341",
+        "completion": "0.000007",
+        "input_cache_read": "0.000000033"
       }
     },
     "ZHIPU/GLM-5.3": {
@@ -484,9 +484,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.3-flash",
       "pricing": {
-        "prompt": "0.000000048",
-        "completion": "0.00000016",
-        "input_cache_read": "0.000000006"
+        "prompt": "0.000000041191",
+        "completion": "0.000000375",
+        "input_cache_read": "0.00000000375"
       }
     },
     "ZHIPU/GLM-5.3-FlashX": {
@@ -510,9 +510,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.2",
       "pricing": {
-        "prompt": "0.00000062",
-        "completion": "0.00000242",
-        "input_cache_read": "0.00000014"
+        "prompt": "0.0000000341",
+        "completion": "0.000007",
+        "input_cache_read": "0.000000033"
       }
     },
     "claude-fable-5-1": {
@@ -673,9 +673,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.2",
       "pricing": {
-        "prompt": "0.00000062",
-        "completion": "0.00000242",
-        "input_cache_read": "0.00000014"
+        "prompt": "0.0000000341",
+        "completion": "0.000007",
+        "input_cache_read": "0.000000033"
       }
     },
     "glm-5.3": {
@@ -691,9 +691,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.3-flash",
       "pricing": {
-        "prompt": "0.000000048",
-        "completion": "0.00000016",
-        "input_cache_read": "0.000000006"
+        "prompt": "0.000000041191",
+        "completion": "0.000000375",
+        "input_cache_read": "0.00000000375"
       }
     },
     "glm-5.3-prime": {
@@ -1235,9 +1235,9 @@
       "source": "openrouter",
       "source_model": "google/gemma-4-26b-a4b-it",
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       }
     },
     "models/gemma-4-31b-it": {
@@ -1401,9 +1401,9 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4.1-flash",
       "pricing": {
-        "prompt": "0.0000000352",
-        "completion": "0.0000000112",
-        "input_cache_read": "0.0000000016"
+        "prompt": "0.000000049",
+        "completion": "0.000000375",
+        "input_cache_read": "0.000000001"
       }
     },
     "MedAIBase/AntAngelMed": {
