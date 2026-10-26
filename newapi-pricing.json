@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "success": true,
-  "generated_at": "2026-10-25T06:07:13.360843+00:00",
+  "generated_at": "2026-10-26T06:12:11.583957+00:00",
   "units": "Token coefficients: USD per million tokens; fixed/task amounts: USD; OpenRouter source prices: USD per token",
   "data": {
     "billing_mode": {
@@ -213,7 +213,7 @@
       "ZHIPU/GLM-5": "tier(\"standard\", p * 1 + c * 3.2 + cr * 0.2)",
       "ZHIPU/GLM-5.1": "tier(\"standard\", p * 1.4 + c * 4.4 + cr * 0.26)",
       "ZHIPU/GLM-5.2": "tier(\"standard\", p * 0.0341 + c * 7 + cr * 0.033)",
-      "ZHIPU/GLM-5.3": "tier(\"standard\", p * 0.079 + c * 1.4 + cr * 0.078)",
+      "ZHIPU/GLM-5.3": "tier(\"standard\", p * 0.0699 + c * 1.4 + cr * 0.0689)",
       "ZHIPU/GLM-5.3-Flash": "tier(\"standard\", p * 0.15 + c * 0.5 + cr * 0.03)",
       "ZHIPU/GLM-5.3-FlashX": "tier(\"standard\", p * 0.37 + c * 1.25 + cr * 0.09)",
       "ZhipuAI/GLM-4.7-Flash": "tier(\"standard\", p * 0.0605 + c * 0.4)",
@@ -224,14 +224,14 @@
       "claude-opus-5-5": "tier(\"standard\", p * 4 + c * 20 + cr * 0.2 + cc * 5 + cc1h * 8)",
       "claude-sonnet-5": "tier(\"standard\", p * 2 + c * 10 + cr * 0.2 + cc * 2.5 + cc1h * 4)",
       "claude-sonnet-5-5": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 4)",
-      "deepseek-ai/DeepSeek-V4-Flash-0731": "tier(\"standard\", p * 0.0422 + c * 0.1694 + cr * 0.028)",
-      "deepseek-v4-flash-0731": "tier(\"standard\", p * 0.0422 + c * 0.1694 + cr * 0.028)",
-      "deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 0.66 + c * 1.98 + cr * 0.022)",
+      "deepseek-ai/DeepSeek-V4-Flash-0731": "tier(\"standard\", p * 0.44 + c * 1.32 + cr * 0.014)",
+      "deepseek-v4-flash-0731": "tier(\"standard\", p * 0.44 + c * 1.32 + cr * 0.014)",
+      "deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 1.32 + c * 3.96 + cr * 0.044)",
       "gemini-3.5-flash-lite": "tier(\"standard\", p * 0.3 + c * 2.5 + cr * 0.03 + cc * 0.0833333333333333)",
       "gemini-3.6-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "gemini-3.7-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "glm-5.2": "tier(\"standard\", p * 0.0341 + c * 7 + cr * 0.033)",
-      "glm-5.3": "tier(\"standard\", p * 0.079 + c * 1.4 + cr * 0.078)",
+      "glm-5.3": "tier(\"standard\", p * 0.0699 + c * 1.4 + cr * 0.0689)",
       "glm-5.3-flash": "tier(\"standard\", p * 0.15 + c * 0.5 + cr * 0.03)",
       "glm-5.3-prime": "tier(\"standard\", p * 2.8 + c * 8.8 + cr * 0.56)",
       "gpt-5.6-luna": "len < 272000 ? tier(\"standard\", p * 0.2 + c * 1.2 + cr * 0.02 + cc * 0.25) : tier(\"context_272000\", p * 0.4 + c * 1.8 + cr * 0.04 + cc * 0.5)",
@@ -247,9 +247,9 @@
       "grok-4.6": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
       "grok-4.7": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
       "kimi-k2.7-code": "tier(\"standard\", p * 0.6712 + c * 3.35 + cr * 0.15)",
-      "kimi-k3": "tier(\"standard\", p * 0.239 + c * 10.8 + cr * 0.21)",
+      "kimi-k3": "tier(\"standard\", p * 0.214 + c * 20 + cr * 0.204)",
       "kimi/kimi-k2.7-code": "tier(\"standard\", p * 0.6712 + c * 3.35 + cr * 0.15)",
-      "kimi/kimi-k3": "tier(\"standard\", p * 0.239 + c * 10.8 + cr * 0.21)",
+      "kimi/kimi-k3": "tier(\"standard\", p * 0.214 + c * 20 + cr * 0.204)",
       "mistral-medium-3": "tier(\"standard\", p * 0.4 + c * 2 + cr * 0.04)",
       "mistral-medium-3-5": "tier(\"standard\", p * 1.5 + c * 7.5)",
       "mistral-medium-3.5": "tier(\"standard\", p * 1.5 + c * 7.5)",
@@ -268,8 +268,8 @@
       "models/gemini-3.8-flash": "tier(\"standard\", p * 0.825 + c * 4.125 + cr * 0.0825 + cc * 0.0416666666666667)",
       "models/gemini-flash-latest": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "models/gemini-pro-latest": "tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 0.1875)",
-      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.0675 + c * 0.225 + cr * 0.0375)",
-      "models/gemma-4-31b-it": "tier(\"standard\", p * 0.2 + c * 0.4)",
+      "models/gemma-4-26b-a4b-it": "tier(\"standard\", p * 0.09 + c * 0.3 + cr * 0.05)",
+      "models/gemma-4-31b-it": "tier(\"standard\", p * 0.1 + c * 0.34 + cr * 0.1)",
       "nex-agi/Nex-N2.5-Pro": "tier(\"standard\", p * 0.075 + c * 0.25 + cr * 0.015)",
       "nex-agi/Nex-N2.5-mini": "tier(\"standard\", p * 0.025 + c * 0.1 + cr * 0.0025)",
       "qwen3.5-plus-2026-04-20": "len < 256000 ? tier(\"standard\", p * 0.3 + c * 1.8 + cc * 0.375) : tier(\"context_256000\", p * 0.375 + c * 2.25 + cc * 0.46875)",
@@ -282,8 +282,8 @@
       "stepfun-ai/Step-3.7-Flash": "tier(\"standard\", p * 0.2 + c * 1.15 + cr * 0.04)",
       "vanchin/deepseek-r1": "tier(\"standard\", p * 0.7 + c * 2.5)",
       "vanchin/deepseek-v3.1-terminus": "tier(\"standard\", p * 0.27 + c * 1)",
-      "vanchin/deepseek-v4-pro": "tier(\"standard\", p * 0.2088 + c * 0.4176 + cr * 0.0174)",
-      "vanchin/deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 0.66 + c * 1.98 + cr * 0.022)",
+      "vanchin/deepseek-v4-pro": "tier(\"standard\", p * 0.95526 + c * 1.91052 + cr * 0.079605)",
+      "vanchin/deepseek-v4-pro-0813": "(weekday(\"UTC\") == 0 || weekday(\"UTC\") == 6) ? tier(\"utc_1\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 0 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 100) ? tier(\"utc_2\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 100 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 400) ? tier(\"utc_3\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 400 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 600) ? tier(\"utc_4\", p * 0.66 + c * 1.98 + cr * 0.022) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 600 && (hour(\"UTC\") * 100 + minute(\"UTC\")) < 1000) ? tier(\"utc_5\", p * 1.32 + c * 3.96 + cr * 0.044) : (weekday(\"UTC\") == 1 || weekday(\"UTC\") == 2 || weekday(\"UTC\") == 3 || weekday(\"UTC\") == 4 || weekday(\"UTC\") == 5) && ((hour(\"UTC\") * 100 + minute(\"UTC\")) >= 1000 || (hour(\"UTC\") * 100 + minute(\"UTC\")) < 0) ? tier(\"utc_6\", p * 0.66 + c * 1.98 + cr * 0.022) : tier(\"standard\", p * 1.32 + c * 3.96 + cr * 0.044)",
       "vanchin/deepseek-v4.1-flash": "tier(\"standard\", p * 0.02 + c * 1 + cr * 0.015)",
       "MedAIBase/AntAngelMed": "tier(\"free_inference\", p * 0 + c * 0)",
       "MiniMax/MiniMax-M1-80k": "tier(\"free_inference\", p * 0 + c * 0)",
@@ -475,9 +475,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.3",
       "pricing": {
-        "prompt": "0.000000079",
+        "prompt": "0.0000000699",
         "completion": "0.0000014",
-        "input_cache_read": "0.000000078"
+        "input_cache_read": "0.0000000689"
       }
     },
     "ZHIPU/GLM-5.3-Flash": {
@@ -601,27 +601,27 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-flash-0731",
       "pricing": {
-        "prompt": "0.0000000422",
-        "completion": "0.0000001694",
-        "input_cache_read": "0.000000028"
+        "prompt": "0.00000044",
+        "completion": "0.00000132",
+        "input_cache_read": "0.000000014"
       }
     },
     "deepseek-v4-flash-0731": {
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-flash-0731",
       "pricing": {
-        "prompt": "0.0000000422",
-        "completion": "0.0000001694",
-        "input_cache_read": "0.000000028"
+        "prompt": "0.00000044",
+        "completion": "0.00000132",
+        "input_cache_read": "0.000000014"
       }
     },
     "deepseek-v4-pro-0813": {
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-pro-0813",
       "pricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00000198",
-        "input_cache_read": "0.000000022",
+        "prompt": "0.00000132",
+        "completion": "0.00000396",
+        "input_cache_read": "0.000000044",
         "overrides": [
           {
             "utc_days": [
@@ -763,9 +763,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.3",
       "pricing": {
-        "prompt": "0.000000079",
+        "prompt": "0.0000000699",
         "completion": "0.0000014",
-        "input_cache_read": "0.000000078"
+        "input_cache_read": "0.0000000689"
       }
     },
     "glm-5.3-flash": {
@@ -1009,9 +1009,9 @@
       "source": "openrouter",
       "source_model": "moonshotai/kimi-k3",
       "pricing": {
-        "prompt": "0.000000239",
-        "completion": "0.0000108",
-        "input_cache_read": "0.00000021"
+        "prompt": "0.000000214",
+        "completion": "0.00002",
+        "input_cache_read": "0.000000204"
       }
     },
     "kimi/kimi-k2.7-code": {
@@ -1027,9 +1027,9 @@
       "source": "openrouter",
       "source_model": "moonshotai/kimi-k3",
       "pricing": {
-        "prompt": "0.000000239",
-        "completion": "0.0000108",
-        "input_cache_read": "0.00000021"
+        "prompt": "0.000000214",
+        "completion": "0.00002",
+        "input_cache_read": "0.000000204"
       }
     },
     "mistral-medium-3": {
@@ -1316,17 +1316,18 @@
       "source": "openrouter",
       "source_model": "google/gemma-4-26b-a4b-it",
       "pricing": {
-        "prompt": "0.0000000675",
-        "completion": "0.000000225",
-        "input_cache_read": "0.0000000375"
+        "prompt": "0.00000009",
+        "completion": "0.0000003",
+        "input_cache_read": "0.00000005"
       }
     },
     "models/gemma-4-31b-it": {
       "source": "openrouter",
       "source_model": "google/gemma-4-31b-it",
       "pricing": {
-        "prompt": "0.0000002",
-        "completion": "0.0000004"
+        "prompt": "0.0000001",
+        "completion": "0.00000034",
+        "input_cache_read": "0.0000001"
       }
     },
     "nex-agi/Nex-N2.5-Pro": {
@@ -1464,18 +1465,18 @@
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-pro",
       "pricing": {
-        "prompt": "0.0000002088",
-        "completion": "0.0000004176",
-        "input_cache_read": "0.0000000174"
+        "prompt": "0.00000095526",
+        "completion": "0.00000191052",
+        "input_cache_read": "0.000000079605"
       }
     },
     "vanchin/deepseek-v4-pro-0813": {
       "source": "openrouter",
       "source_model": "deepseek/deepseek-v4-pro-0813",
       "pricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00000198",
-        "input_cache_read": "0.000000022",
+        "prompt": "0.00000132",
+        "completion": "0.00000396",
+        "input_cache_read": "0.000000044",
         "overrides": [
           {
             "utc_days": [
