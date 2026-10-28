@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "success": true,
-  "generated_at": "2026-10-27T06:15:54.453580+00:00",
+  "generated_at": "2026-10-28T06:51:14.349811+00:00",
   "units": "Token coefficients: USD per million tokens; fixed/task amounts: USD; OpenRouter source prices: USD per token",
   "data": {
     "billing_mode": {
@@ -209,15 +209,15 @@
       "MiniMax/MiniMax-M2.1": "tier(\"standard\", p * 0.3 + c * 1.2 + cr * 0.03)",
       "MiniMax/MiniMax-M2.5": "tier(\"standard\", p * 0.3 + c * 1.2 + cr * 0.03)",
       "MiniMax/MiniMax-M3": "tier(\"standard\", p * 0.3 + c * 1.2 + cr * 0.06)",
-      "Qwen/Qwen3.8-27B": "tier(\"standard\", p * 0.2 + c * 2.5 + cr * 0.09)",
+      "Qwen/Qwen3.8-27B": "tier(\"standard\", p * 0.039 + c * 1.25 + cr * 0.0039)",
       "ZHIPU/GLM-5": "tier(\"standard\", p * 1 + c * 3.2 + cr * 0.2)",
-      "ZHIPU/GLM-5.1": "tier(\"standard\", p * 0.966 + c * 3.036 + cr * 0.1794)",
-      "ZHIPU/GLM-5.2": "tier(\"standard\", p * 0.0341 + c * 7 + cr * 0.033)",
-      "ZHIPU/GLM-5.3": "tier(\"standard\", p * 0.0769 + c * 1.4 + cr * 0.0689)",
+      "ZHIPU/GLM-5.1": "tier(\"standard\", p * 1.4 + c * 4.4 + cr * 0.26)",
+      "ZHIPU/GLM-5.2": "tier(\"standard\", p * 0.026 + c * 7 + cr * 0.025)",
+      "ZHIPU/GLM-5.3": "tier(\"standard\", p * 0.0699 + c * 1.4 + cr * 0.0689)",
       "ZHIPU/GLM-5.3-Flash": "tier(\"standard\", p * 0.15 + c * 0.5 + cr * 0.03)",
       "ZHIPU/GLM-5.3-FlashX": "tier(\"standard\", p * 0.37 + c * 1.25 + cr * 0.09)",
       "ZhipuAI/GLM-4.7-Flash": "tier(\"standard\", p * 0.0605 + c * 0.4)",
-      "ZhipuAI/GLM-5.2": "tier(\"standard\", p * 0.0341 + c * 7 + cr * 0.033)",
+      "ZhipuAI/GLM-5.2": "tier(\"standard\", p * 0.026 + c * 7 + cr * 0.025)",
       "claude-fable-5-1": "tier(\"standard\", p * 10 + c * 50 + cr * 0.25 + cc * 12.5 + cc1h * 20)",
       "claude-haiku-5-5": "len < 100000 ? tier(\"standard\", p * 0.1 + c * 0.5 + cr * 0.01 + cc * 0.125 + cc1h * 0.2) : tier(\"context_100000\", p * 0.5 + c * 2.5 + cr * 0.05 + cc * 0.625 + cc1h * 1)",
       "claude-opus-5": "tier(\"standard\", p * 5 + c * 25 + cr * 0.5 + cc * 6.25 + cc1h * 10)",
@@ -230,8 +230,8 @@
       "gemini-3.5-flash-lite": "tier(\"standard\", p * 0.3 + c * 2.5 + cr * 0.03 + cc * 0.0833333333333333)",
       "gemini-3.6-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
       "gemini-3.7-flash": "tier(\"standard\", p * 0.75 + c * 3.75 + cr * 0.075 + cc * 0.0416666666666667)",
-      "glm-5.2": "tier(\"standard\", p * 0.0341 + c * 7 + cr * 0.033)",
-      "glm-5.3": "tier(\"standard\", p * 0.0769 + c * 1.4 + cr * 0.0689)",
+      "glm-5.2": "tier(\"standard\", p * 0.026 + c * 7 + cr * 0.025)",
+      "glm-5.3": "tier(\"standard\", p * 0.0699 + c * 1.4 + cr * 0.0689)",
       "glm-5.3-flash": "tier(\"standard\", p * 0.15 + c * 0.5 + cr * 0.03)",
       "glm-5.3-prime": "tier(\"standard\", p * 2.8 + c * 8.8 + cr * 0.56)",
       "gpt-5.6-luna": "len < 272000 ? tier(\"standard\", p * 0.2 + c * 1.2 + cr * 0.02 + cc * 0.25) : tier(\"context_272000\", p * 0.4 + c * 1.8 + cr * 0.04 + cc * 0.5)",
@@ -247,9 +247,9 @@
       "grok-4.6": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
       "grok-4.7": "len < 200000 ? tier(\"standard\", p * 2 + c * 6 + cr * 0.5) : tier(\"context_200000\", p * 4 + c * 12 + cr * 1)",
       "kimi-k2.7-code": "tier(\"standard\", p * 0.56 + c * 3.1 + cr * 0.15)",
-      "kimi-k3": "tier(\"standard\", p * 0.189 + c * 11.5 + cr * 0.179)",
+      "kimi-k3": "tier(\"standard\", p * 0.15 + c * 20 + cr * 0.14)",
       "kimi/kimi-k2.7-code": "tier(\"standard\", p * 0.56 + c * 3.1 + cr * 0.15)",
-      "kimi/kimi-k3": "tier(\"standard\", p * 0.189 + c * 11.5 + cr * 0.179)",
+      "kimi/kimi-k3": "tier(\"standard\", p * 0.15 + c * 20 + cr * 0.14)",
       "mistral-medium-3": "tier(\"standard\", p * 0.4 + c * 2 + cr * 0.04)",
       "mistral-medium-3-5": "tier(\"standard\", p * 1.5 + c * 7.5)",
       "mistral-medium-3.5": "tier(\"standard\", p * 1.5 + c * 7.5)",
@@ -275,7 +275,7 @@
       "qwen3.5-plus-2026-04-20": "len < 256000 ? tier(\"standard\", p * 0.3 + c * 1.8 + cc * 0.375) : tier(\"context_256000\", p * 0.375 + c * 2.25 + cc * 0.46875)",
       "qwen3.7-flash": "len < 32000 ? tier(\"standard\", p * 0.03 + c * 0.13 + cr * 0.006 + cc * 0.038) : len < 256000 ? tier(\"context_32000\", p * 0.1 + c * 0.4 + cr * 0.02 + cc * 0.125) : tier(\"context_256000\", p * 0.2 + c * 0.8 + cr * 0.04 + cc * 0.25)",
       "qwen3.8-2.4t-a95b": "tier(\"standard\", p * 2 + c * 6 + cr * 0.25)",
-      "qwen3.8-27b": "tier(\"standard\", p * 0.2 + c * 2.5 + cr * 0.09)",
+      "qwen3.8-27b": "tier(\"standard\", p * 0.039 + c * 1.25 + cr * 0.0039)",
       "qwen3.8-flash": "tier(\"standard\", p * 0.15 + c * 0.47 + cr * 0.016)",
       "qwen3.8-max-0902": "tier(\"standard\", p * 2 + c * 6 + cr * 0.25)",
       "qwen3.8-omni-flash": "tier(\"standard\", p * 0.15 + c * 0.47 + cr * 0.016)",
@@ -439,9 +439,9 @@
       "source": "openrouter",
       "source_model": "qwen/qwen3.8-27b",
       "pricing": {
-        "prompt": "0.0000002",
-        "completion": "0.0000025",
-        "input_cache_read": "0.00000009"
+        "prompt": "0.000000039",
+        "completion": "0.00000125",
+        "input_cache_read": "0.0000000039"
       }
     },
     "ZHIPU/GLM-5": {
@@ -457,25 +457,25 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.1",
       "pricing": {
-        "prompt": "0.000000966",
-        "completion": "0.000003036",
-        "input_cache_read": "0.0000001794"
+        "prompt": "0.0000014",
+        "completion": "0.0000044",
+        "input_cache_read": "0.00000026"
       }
     },
     "ZHIPU/GLM-5.2": {
       "source": "openrouter",
       "source_model": "z-ai/glm-5.2",
       "pricing": {
-        "prompt": "0.0000000341",
+        "prompt": "0.000000026",
         "completion": "0.000007",
-        "input_cache_read": "0.000000033"
+        "input_cache_read": "0.000000025"
       }
     },
     "ZHIPU/GLM-5.3": {
       "source": "openrouter",
       "source_model": "z-ai/glm-5.3",
       "pricing": {
-        "prompt": "0.0000000769",
+        "prompt": "0.0000000699",
         "completion": "0.0000014",
         "input_cache_read": "0.0000000689"
       }
@@ -510,9 +510,9 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.2",
       "pricing": {
-        "prompt": "0.0000000341",
+        "prompt": "0.000000026",
         "completion": "0.000007",
-        "input_cache_read": "0.000000033"
+        "input_cache_read": "0.000000025"
       }
     },
     "claude-fable-5-1": {
@@ -754,16 +754,16 @@
       "source": "openrouter",
       "source_model": "z-ai/glm-5.2",
       "pricing": {
-        "prompt": "0.0000000341",
+        "prompt": "0.000000026",
         "completion": "0.000007",
-        "input_cache_read": "0.000000033"
+        "input_cache_read": "0.000000025"
       }
     },
     "glm-5.3": {
       "source": "openrouter",
       "source_model": "z-ai/glm-5.3",
       "pricing": {
-        "prompt": "0.0000000769",
+        "prompt": "0.0000000699",
         "completion": "0.0000014",
         "input_cache_read": "0.0000000689"
       }
@@ -1009,9 +1009,9 @@
       "source": "openrouter",
       "source_model": "moonshotai/kimi-k3",
       "pricing": {
-        "prompt": "0.000000189",
-        "completion": "0.0000115",
-        "input_cache_read": "0.000000179"
+        "prompt": "0.00000015",
+        "completion": "0.00002",
+        "input_cache_read": "0.00000014"
       }
     },
     "kimi/kimi-k2.7-code": {
@@ -1027,9 +1027,9 @@
       "source": "openrouter",
       "source_model": "moonshotai/kimi-k3",
       "pricing": {
-        "prompt": "0.000000189",
-        "completion": "0.0000115",
-        "input_cache_read": "0.000000179"
+        "prompt": "0.00000015",
+        "completion": "0.00002",
+        "input_cache_read": "0.00000014"
       }
     },
     "mistral-medium-3": {
@@ -1403,9 +1403,9 @@
       "source": "openrouter",
       "source_model": "qwen/qwen3.8-27b",
       "pricing": {
-        "prompt": "0.0000002",
-        "completion": "0.0000025",
-        "input_cache_read": "0.00000009"
+        "prompt": "0.000000039",
+        "completion": "0.00000125",
+        "input_cache_read": "0.0000000039"
       }
     },
     "qwen3.8-flash": {
